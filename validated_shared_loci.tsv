@@ -1,0 +1,843 @@
+SNPS	DISEASE/TRAIT	MAPPED_GENE	REPORTED GENE(S)	P-VALUE	RISK ALLELE FREQUENCY	INITIAL SAMPLE SIZE	GeneSymbol	ClinicalSignificance	ReviewStatus	NumberSubmitters	PhenotypeList
+rs10214237	Atopic dermatitis	IL7R - CAPSL	IL7R, CAPSL	3E-14	0.73	18,900 European ancestry cases, 1,472 Japanese ancestry cases, 422 African American cases, 300 Latino cases, 305 cases, 84,166 European ancestry controls, 7,966 Japanese ancestry controls, 844 African American controls, 1,592 Latino controls, 896 controls	NA	NA	NA	NA	NA
+rs10214237	Atopic dermatitis	IL7R - CAPSL	IL7R, CAPSL	2E-10	0.27	18,900 European ancestry cases, 1,472 Japanese ancestry cases, 422 African American cases, 300 Latino cases, 305 cases, 84,166 European ancestry controls, 7,966 Japanese ancestry controls, 844 African American controls, 1,592 Latino controls, 896 controls	NA	NA	NA	NA	NA
+rs10214237	Type 1 diabetes	IL7R - CAPSL	NA	2E-11	0.2752	15,573 European ancestry cases, 158,408 European ancestry controls	NA	NA	NA	NA	NA
+rs10214237	SIT1 protein levels	IL7R - CAPSL	NA	1E-12	0.27161473	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Left ventricle diastolic internal dimension	ATXN2	ATXN2	1E-8	0.5	30,201 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Mean spheric corpuscular volume	ATXN2	ATXN2	9E-18	0.504967	408,112 British individuals	NA	NA	NA	NA	NA
+rs10774625	Systemic lupus erythematosus	ATXN2	SH2B3, ATXN2	4E-9	NR	5,201 European ancestry cases, 9,066 European ancestry controls	NA	NA	NA	NA	NA
+rs10774625	Myocardial infarction	ATXN2	ATXN2	3E-23	0.465241	14,825 European ancestry cases, 44,000 European and unknown ancestry cases, 2,680 cases, 380,970 European ancestry controls, 123,504 European and unknown ancestry controls, 73,242 controls	NA	NA	NA	NA	NA
+rs10774625	Systemic lupus erythematosus	ATXN2	SH2B3	9E-8	0.499	1,659 Chinese ancestry cases, 3,398 Chinese ancestry controls, 4,036 European ancestry cases, 6,959 European ancestry controls	NA	NA	NA	NA	NA
+rs10774625	Hypothyroidism	ATXN2	ATXN2	1E-26	NR	17,558 European ancestry cases, 117,083 European ancestry controls	NA	NA	NA	NA	NA
+rs10774625	Retinal vascular caliber	ATXN2	SH2B3, ATXN2, PTPN11	2E-13	0.48	15,358 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Body mass index and systole blood pressure (pairwise)	ATXN2	ATXN2	4E-22	0.5229	472,402 European ancestry individuals, 16,962 East Asian, South Asian, Hispanic and African American ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Body mass index and coronary artery disease (pairwise)	ATXN2	ATXN2	2E-13	0.5229	464,176 European ancestry individuals, 59,353 East Asian, South Asian, Hispanic and African American ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Body mass index and HDL-C (pairwise)	ATXN2	ATXN2	1E-13	0.5229	509,429 European ancestry individuals, 16,962 East Asian, South Asian, Hispanic and African American ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Urate levels	ATXN2	ATXN2	1E-17	0.4666	288,649 European ancestry individuals, 125,725 East Asian ancestry individuals, 33,671 African American individuals, 9,037 South Asian ancestry individuals, 608 Hispanic individuals	NA	NA	NA	NA	NA
+rs10774625	Linoleic acid percentage of total fatty acids	ATXN2	NA	5E-10	0.497812	199,732 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Glycated hemoglobin levels	ATXN2	ATXN2	1E-8	0.5056	88,355 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Coronary artery disease (myocardial infarction, percutaneous transluminal coronary angioplasty, coronary artery bypass grafting, angina or chromic ischemic heart disease)	ATXN2	SH2B3	9E-14	0.491	18,467 European and unknown ancestry cases, 45,264 European and unknown ancestry controls	NA	NA	NA	NA	NA
+rs10774625	Estimated glomerular filtration rate	ATXN2	ATXN2	1E-8	0.4787	567,460 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Hypertension	ATXN2	ATXN2	2E-13	NR	30,822 British ancestry normal blood pressure individuals, 25,242 British ancestry elevated blood pressure individuals, 50,461 British ancestry stage 1 hypertension individuals, 75,286 British ancestry stage 2 hypertension individuals, 3,754 British ancestry hypertension crisis individuals	NA	NA	NA	NA	NA
+rs10774625	Parental longevity (father's age at death or father's attained age)	ATXN2	NR	1E-8	NR	up to 699,000 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Pain (pleiotropy)	ATXN2	NA	3E-13	NR	361,194 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Pain (pleiotropy)	ATXN2	NA	6E-10	NR	167,020 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Fibrinogen levels or plasminogen activator inhibitor 1 levels (pleiotropy)	ATXN2	NA	4E-14	NR	120,246 European ancestry individuals with fibrinogen measurements, 19,599 European ancestry individuals with PAI1 measurements	NA	NA	NA	NA	NA
+rs10774625	Free cholesterol to total lipids ratio in very small VLDL	ATXN2	NA	4E-13	0.4666	4,435 East Asian ancestry individuals, 11,340 South Asian ancestry individuals, 120,241 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Rheumatoid arthritis or type 1 diabetes	ATXN2	NA	3E-43	NR	5,082 European ancestry rheumatoid arthritis cases, 181,214 European ancestry type 1 diabetes cases or controls, 447,182 European ancestry controls	NA	NA	NA	NA	NA
+rs10774625	Leucine levels	ATXN2	NA	7E-9	0.477542	117,944 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Linoleic acid to total fatty acids percentage	ATXN2	NA	7E-10	NR	239,268 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Protein kinase C-binding protein NELL2 levels	ATXN2	NA	1E-12	0.48	10,708 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	EGF-like repeat and discoidin I-like domain-containing protein 3 levels	ATXN2	NA	4E-13	0.48	10,708 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Matrilin-2 levels	ATXN2	NA	7E-13	0.48	10,708 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Gout	ATXN2	NA	5E-33	0.5086	77,627 European ancestry cases, 933,894 European ancestry controls	NA	NA	NA	NA	NA
+rs10774625	Externalizing behaviour (multivariate analysis)	ATXN2	NA	1E-11	0.487	up to 53,293 European ancestry Attention-deficit/hyperactivity disorder individuals, up to 164,684 European ancestry problematic alcohol use individuals, up to 186,875 European ancestry lifetime cannabis use individuals, up to 357,187 European ancestry individuals measuring  reverse-coded age at first sexual intercourse, up to 336,121 European ancestry individuals measuring number of sexual partners, up to 426,379 European ancestry individuals measuring general risk tolerance, up to 1,251,809  European ancestry individuals measuring lifetime smoking initiation	NA	NA	NA	NA	NA
+rs10774625	Free cholesterol to total lipids ratio in medium HDL	ATXN2	NA	1E-12	0.497176	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Mitral valve prolapse	ATXN2	NA	4E-9	0.49	4,884 European ancestry cases, 434,649 European ancestry controls	NA	NA	NA	NA	NA
+rs10774625	HDL cholesterol levels	ATXN2	NA	3E-9	0.497176	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Free cholesterol to total lipids ratio in IDL	ATXN2	NA	5E-12	0.4659	4,435 East Asian ancestry individuals, 11,340 South Asian ancestry individuals, 120,241 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Large artery stroke (MTAG)	ATXN2	NA	8E-12	0.4888	6,399 European ancestry cases, 1,234,808 European ancestry controls	NA	NA	NA	NA	NA
+rs10774625	Smoking initiation	ATXN2	NA	7E-31	0.53	3,382,012 European ancestry, East Asian ancestry, Hispanic or Latin American, African ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Free cholesterol to total lipids ratio in medium HDL	ATXN2	NA	7E-10	0.4659	4,435 East Asian ancestry individuals, 11,340 South Asian ancestry individuals, 120,241 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Coronary artery disease	ATXN2	NA	1E-28	0.46	181,522 European ancestry, unknown cases, 984,168 European ancestry, unknown controls	NA	NA	NA	NA	NA
+rs10774625	Lifetime smoking	ATXN2	NA	1E-10	NR	272,943 European or unknown ancestry cases, 226,795 European or unknown ancestry controls	NA	NA	NA	NA	NA
+rs10774625	Chronic elevation of alanine aminotransferase (cALT) levels	ATXN2	NA	1E-8	0.465	95,472 European ancestry cases, 68,725 European ancestry controls, 23,977 African American cases, 13,387 African American controls, 7,650 Hispanic cases, 7,468 Hispanic controls, 1,088 Asian ancestry cases, 828 Asian ancestry controls	NA	NA	NA	NA	NA
+rs10774625	Cholesteryl ester levels in HDL	ATXN2	NA	6E-9	0.497176	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Free cholesterol levels in HDL	ATXN2	NA	2E-9	0.497176	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Cholesteryl esters to total lipids ratio in large HDL	ATXN2	NA	9E-10	0.497176	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Urate levels	ATXN2	NR	1E-6	0.5302	174,111 European, East Asian, African American, South Asian and Hispanic ancestry men, 172,102 European, East Asian, African American, South Asian and Hispanic ancestry women	NA	NA	NA	NA	NA
+rs10774625	Urate levels	ATXN2	NR	4E-8	0.5361	174,111 European, East Asian, African American, South Asian and Hispanic ancestry men, 172,102 European, East Asian, African American, South Asian and Hispanic ancestry women	NA	NA	NA	NA	NA
+rs10774625	Asthma (age of onset)	ATXN2	ATXN2, SH2B3, BRAP	1E-7	0.504	37,846 British ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Asthma (childhood onset)	ATXN2	ATXN2, SH2B3, BRAP	2E-8	0.504	9,433 British ancestry cases, 318,237 British ancestry controls	NA	NA	NA	NA	NA
+rs10774625	Urate levels	ATXN2	ATXN2	6E-17	0.4826	288,649 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Cancer	ATXN2	NA	5E-6	NR	56,634 White British ancestry cases, 218,196 White British ancestry controls	NA	NA	NA	NA	NA
+rs10774625	Myocardial infarction	ATXN2	NA	5E-23	NR	3,950 Saudi Arabian ancestry cases, 2,324 Saudi Arabian ancestry controls, 56,278 European and unknown ancestry cases, 577,716 European and unknown ancestry controls	NA	NA	NA	NA	NA
+rs10774625	Systolic blood pressure (UKB data field 4080)	ATXN2	NA	2E-24	0.50435963	394,642 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	ADGRF5 protein levels	ATXN2	NA	2E-22	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	CDCP1 protein levels	ATXN2	NA	5E-16	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	CD101 protein levels	ATXN2	NA	9E-24	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	GZMB protein levels	ATXN2	NA	1E-23	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	FUT8 protein levels	ATXN2	NA	3E-13	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	FCRL2 protein levels	ATXN2	NA	1E-27	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	TNFSF14 protein levels	ATXN2	NA	3E-13	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	TNFSF8 protein levels	ATXN2	NA	3E-54	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	NID1 protein levels	ATXN2	NA	7E-16	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	INPP5D protein levels	ATXN2	NA	1E-13	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	ITGB7 protein levels	ATXN2	NA	9E-17	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	PLAU protein levels	ATXN2	NA	1E-11	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	PLAUR protein levels	ATXN2	NA	8E-18	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	KIR2DS4 protein levels	ATXN2	NA	6E-13	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	LILRB2 protein levels	ATXN2	NA	1E-24	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	PLA2G15 protein levels	ATXN2	NA	6E-16	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Other symptoms involving abdomen and pelvis (PheCode 579)	ATXN2	NA	4E-13	0.5018	6,772 European ancestry cases, 430,934 European ancestry controls	NA	NA	NA	NA	NA
+rs10774625	CPXM1 protein levels	ATXN2	NA	1E-14	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	CSF3R protein levels	ATXN2	NA	1E-32	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	CTSD protein levels	ATXN2	NA	1E-13	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	SIGLEC8 protein levels	ATXN2	NA	1E-26	0.50197926	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	sodium (minimum, inv-norm transformed)	ATXN2	NA	1E-30	0.502	421,073 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	In your lifetime, have you smoked a total of at least 100 cigarettes?	ATXN2	NA	5E-13	0.502	225,576 European ancestry cases, 83,357 European ancestry controls	NA	NA	NA	NA	NA
+rs10774625	Aspartate aminotransferase (AST, mean, inv-norm transformed)	ATXN2	NA	6E-19	0.3943	112,429 African American or Afro-Caribbean individuals, 54,250 Hispanic or Latin American individuals, 5,835 East Asian ancestry individuals, 389,192 European ancestry individuals	NA	NA	NA	NA	NA
+rs10774625	Hypertension (PheCode 401)	ATXN2	NA	4E-19	0.398	94,292 African American or Afro-Caribbean cases, 22,643 African American or Afro-Caribbean controls, 35,766 Hispanic or Latin American cases, 20,913 Hispanic or Latin American controls, 3,903 East Asian ancestry cases, 2,607 East Asian ancestry controls, 322,448 European ancestry cases, 105,690 European ancestry controls	NA	NA	NA	NA	NA
+rs10774625	Peripheral vascular disease	ATXN2	NA	4E-18	0.4025	9,993 African American or Afro-Caribbean cases, 105,769 African American or Afro-Caribbean controls, 42,552 European ancestry cases, 383,626 European ancestry controls, 3,611 Hispanic or Latin American cases, 53,583 Hispanic or Latin American controls	NA	NA	NA	NA	NA
+rs10876866	Highest math class taken	RPS26 - ERBB3	Intergenic	9E-20	0.6709	430,445 European ancestry individuals	NA	NA	NA	NA	NA
+rs10876866	Nasal polyps	RPS26 - ERBB3	NA	9E-10	NR	5,093 European ancestry cases, 444,966 European ancestry controls, 160 East Asian ancestry cases, 151,846 East Asian ancestry controls	NA	NA	NA	NA	NA
+rs10876866	Type 1 diabetes	RPS26 - ERBB3	NA	3E-8	NR	6,447 European ancestry cases, 451,248 European ancestry controls, 1,219 East Asian ancestry cases, 132,032 East Asian ancestry controls	NA	NA	NA	NA	NA
+rs10876866	Asthma	RPS26 - ERBB3	RPS26, IKZF4, ERBB3, SUOX, PA2G4, RAB5B	1E-15	0.34322	16,247 European ancestry cases, 346,486 European ancestry controls, 52,942 cases, 355,713 controls	NA	NA	NA	NA	NA
+rs11171739	Allergic disease (asthma, hay fever or eczema)	ERBB3	CDK2, ERBB3, IKZF4, PA2G4, RAB5B, RPL41, RPS26, SUOX, ZC3H10	4E-10	NR	25,685 European ancestry allergic diseases cases, 76,768 European ancestry controls	NA	NA	NA	NA	NA
+rs11171739	Brain morphology (MOSTest)	ERBB3	PMEL, CDK2, RAB5B, SUOX, IKZF4, RPS26, ERBB3	4E-10	NR	26,502 European ancestry individuals	NA	NA	NA	NA	NA
+rs11171739	Self-reported math ability	ERBB3	Intergenic	1E-10	0.4181	564,698 European ancestry individuals	NA	NA	NA	NA	NA
+rs11171739	Type 1 diabetes	ERBB3	ERBB3	1E-11	0.42	1,963 European ancestry cases, 2,938 European ancestry controls	NA	NA	NA	NA	NA
+rs11171739	Verbal-numerical reasoning	ERBB3	NA	3E-8	NR	171,304 British ancestry individuals	NA	NA	NA	NA	NA
+rs11171739	Type 1 diabetes	ERBB3	ERBB3	1E-18	0.43	6,670 European ancestry cases, 22,308 European ancestry controls	NA	NA	NA	NA	NA
+rs11171739	Autoimmune traits (pleiotropy)	ERBB3	IKZF4	2E-20	NA	11,489 European ancestry cases with celiac disease, 15,523 European ancestry cases with rheumatoid arthritis, 3,477 European ancestry cases with systemic sclerosis, 6,670 European ancestry cases with type 1 diabetes, 22,308 European ancestry controls	NA	NA	NA	NA	NA
+rs11171739	Cortical surface area	ERBB3	NR	4E-11	0.5734	33,992 European ancestry individuals	NA	NA	NA	NA	NA
+rs11171739	CAMSIS occupational score	ERBB3	NA	1E-13	NR	273,157 British ancestry individuals	NA	NA	NA	NA	NA
+rs11171739	SIOPS occupational score	ERBB3	NA	5E-11	NR	271,769 British ancestry individuals	NA	NA	NA	NA	NA
+rs11171739	ISEI occupational score	ERBB3	NA	1E-8	NR	271,769 British ancestry individuals	NA	NA	NA	NA	NA
+rs11171739	Type 1 diabetes	ERBB3	NA	5E-7	0.2333	1,275 Han Chinese ancestry cases, 2,100 Han Chinese ancestry controls	NA	NA	NA	NA	NA
+rs11171739	Vertex-wise sulcal depth	ERBB3	NA	2E-33	0.41	33,748 European ancestry individuals	NA	NA	NA	NA	NA
+rs11171739	High density lipoprotein cholesterol levels	ERBB3	NA	9E-10	0.578363	1,320,016 European ancestry individuals	NA	NA	NA	NA	NA
+rs11171739	High density lipoprotein cholesterol levels	ERBB3	NA	5E-15	NR	40,963 South Asian ancestry individuals, 48,057 Hispanic individuals, 99,432 Admixed African or African ancestry individuals, 146,492 East Asian ancestry individuals, 1,320,016 European ancestry individuals	NA	NA	NA	NA	NA
+rs11171739	Atopic dermatitis	ERBB3	NA	6E-10	NR	2,597 Japanese ancestry cases, 110,504 Japanese ancestry controls, 25,685 European ancestry cases, 76,768 European ancestry controls	NA	NA	NA	NA	NA
+rs11171739	Brain morphology (MOSTest)	ERBB3	NA	2E-17	NR	33,735 white British ancestry individuals	NA	NA	NA	NA	NA
+rs12251307	Type 1 diabetes	RPL32P23 - RBM17	IL2RA	2E-6	NR	3,561 European ancestry cases, 4,646 European ancestry controls	NA	NA	NA	NA	NA
+rs12251307	Type 1 diabetes	RPL32P23 - RBM17	IL2RA	1E-13	NR	7,514 European ancestry cases, 9,045 European ancestry controls	NA	NA	NA	NA	NA
+rs12251307	Rheumatoid arthritis or type 1 diabetes	RPL32P23 - RBM17	NA	2E-11	NR	5,082 European ancestry rheumatoid arthritis cases, 181,214 European ancestry type 1 diabetes cases or controls, 447,182 European ancestry controls	NA	NA	NA	NA	NA
+rs12251307	Asthma	RPL32P23 - RBM17	NA	2E-9	NR	37,227 European ancestry cases, 124,132 European ancestry controls	NA	NA	NA	NA	NA
+rs12251307	Atopic dermatitis	RPL32P23 - RBM17	NA	5E-107	0.12	60,653 European ancestry cases, 804,329 European ancestry controls	NA	NA	NA	NA	NA
+rs151233	Plateletcrit	CLN3, APOBR	APOBR	6E-41	0.131601	408,112 British individuals	NA	NA	NA	NA	NA
+rs151233	Platelet count	CLN3, APOBR	APOBR	4E-33	0.1308	166,066 European ancestry individuals	NA	NA	NA	NA	NA
+rs151233	Plateletcrit	CLN3, APOBR	APOBR	2E-12	0.1309	164,339 European ancestry individuals	NA	NA	NA	NA	NA
+rs151233	Mean platelet volume	CLN3, APOBR	APOBR	3E-37	0.1309	164,454 European ancestry individuals	NA	NA	NA	NA	NA
+rs151233	Allergic disease (asthma, hay fever or eczema)	CLN3, APOBR	APOBR	3E-6	0.1327	180,129 European ancestry cases, 180,709 European ancestry controls	NA	NA	NA	NA	NA
+rs151233	Type 1 diabetes	CLN3, APOBR	NA	7E-12	0.1369	15,573 European ancestry cases, 158,408 European ancestry controls	NA	NA	NA	NA	NA
+rs151233	Platelet count	CLN3, APOBR	NA	7E-47	0.869	235,256 European ancestry individuals	NA	NA	NA	NA	NA
+rs151233	Platelet count	CLN3, APOBR	NA	4E-77	NR	350,474 European ancestry individuals, 148,623 East Asian ancestry individuals	NA	NA	NA	NA	NA
+rs151233	TNFSF12 protein levels	CLN3, APOBR	NA	1E-11	0.1309561	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs1701704	Asthma	IKZF4	IKZF4	2E-14	0.3433	35,373 British ancestry cases,  270,572 British ancestry controls	NA	NA	NA	NA	NA
+rs1701704	Age of smoking initiation (MTAG)	IKZF4	NR	4E-11	0.334	up to 931,815 European ancestry  individuals	NA	NA	NA	NA	NA
+rs1701704	Type 1 diabetes	IKZF4	IKZF4	5E-18	NR	8,506 European ancestry cases, up to 10,596 European ancestry controls	NA	NA	NA	NA	NA
+rs1701704	Type 1 diabetes	IKZF4	CDK2, RAB5B, SUOX, IKZF4, ERBB3	9E-10	0.35	467 European ancestry trios, 561 European ancestry cases, 1,143 European ancestry controls	NA	NA	NA	NA	NA
+rs1701704	Alopecia areata	IKZF4	IKZF4	3E-8	0.33	Up to 1,054 European ancestry cases, 3,278 European ancestry controls	NA	NA	NA	NA	NA
+rs1701704	Asthma	IKZF4	IKZF4	2E-13	0.18	1,532 Japanese ancestry cases, 3,304 Japanese ancestry controls	NA	NA	NA	NA	NA
+rs1701704	Smoking initiation (ever regular vs never regular)	IKZF4	IKZF4	3E-8	0.341	up to 433,216 European ancestry individuals	NA	NA	NA	NA	NA
+rs1701704	Lung function (FEV1/FVC)	IKZF4	NA	1E-19	NR	approximately 370,000 European ancestry individuals	NA	NA	NA	NA	NA
+rs1701704	FEV1	IKZF4	NA	6E-9	NR	383,471 European ancestry individuals	NA	NA	NA	NA	NA
+rs1701704	Asthma	IKZF4	NA	4E-14	NR	37,227 European ancestry cases, 124,132 European ancestry controls	NA	NA	NA	NA	NA
+rs1701704	Body mass index	IKZF4	NA	2E-14	NR	1,122,049 European ancestry individuals	NA	NA	NA	NA	NA
+rs1701704	Lifetime smoking	IKZF4	NA	3E-9	NR	272,943 European or unknown ancestry cases, 226,795 European or unknown ancestry controls	NA	NA	NA	NA	NA
+rs1701704	FEV1 FVC ratio Z score (UKB data field 20258)	IKZF4	NA	4E-15	0.34310085	394,642 European ancestry individuals	NA	NA	NA	NA	NA
+rs1770	Basal cell carcinoma	HLA-DQB1-AS1, HLA-DQB1	NA	3E-12	NR	49,905 European ancestry cases, 752,392 European ancestry controls	NA	NA	NA	NA	NA
+rs1770	Type 1 diabetes	HLA-DQB1-AS1, HLA-DQB1	HLA-DQB1	2E-232	0.46	1,005 Han Chinese ancestry cases, 1,257 Han Chinese ancestry controls	NA	NA	NA	NA	NA
+rs1770	Steroid-dependent/frequent relapse nephrotic syndrome	HLA-DQB1-AS1, HLA-DQB1	NA	2E-7	NR	179 Chinese Han ancestry cases, 1,835 Chinese Han ancestry controls	NA	NA	NA	NA	NA
+rs1770	Adult asthma	HLA-DQB1-AS1, HLA-DQB1	NA	5E-10	0.17	1,386 Korean ancestry cases, 5,205 Korean ancestry controls	NA	NA	NA	NA	NA
+rs1770	Asthma	HLA-DQB1-AS1, HLA-DQB1	NA	4E-8	NR	1,391 Korean ancestry cases, 5,346 Korean ancestry controls	NA	NA	NA	NA	NA
+rs1799964	Crohn's disease	LTA - TNF	HLA-DQA2, LTA, TNF, LST1, LTB	4E-11	0.209	6,333 European ancestry cases, 15,056 European ancestry controls	NA	NA	NA	NA	NA
+rs1799964	Lymphocyte count	LTA - TNF	NR	7E-15	0.827369	89,266 East Asian ancestry individuals	NA	NA	NA	NA	NA
+rs1799964	Asthma (childhood onset)	LTA - TNF	NR	1E-11	NR	13,435 European ancestry cases, 393,186 European ancestry controls	NA	NA	NA	NA	NA
+rs1799964	Rheumatoid arthritis or type 1 diabetes	LTA - TNF	NA	4E-50	NR	5,082 European ancestry rheumatoid arthritis cases, 181,214 European ancestry type 1 diabetes cases or controls, 447,182 European ancestry controls	NA	NA	NA	NA	NA
+rs1799964	PAFAH1B3 protein levels	LTA - TNF	NA	2E-20	0.20840925	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs1950897	Rheumatoid arthritis	RAD51B	RAD51B	3E-7	0.71	916 African American cases, 1,392 African American controls,	NA	NA	NA	NA	NA
+rs1950897	Rheumatoid arthritis	RAD51B	RAD51B	1E-9	NR	916 African American cases, 1,392 African American controls,	NA	NA	NA	NA	NA
+rs1950897	Asthma	RAD51B	RAD51B	3E-16	0.296881	64,538 European ancestry cases, 239,321 European ancestry controls	NA	NA	NA	NA	NA
+rs1950897	Rheumatoid arthritis	RAD51B	NA	1E-13	NR	14,361 European ancestry cases, 43,923 European ancestry controls, 8,267 East Asian ancestry cases, 244,741 East Asian ancestry controls	NA	NA	NA	NA	NA
+rs1950897	Rheumatoid arthritis	RAD51B	RAD51B	8E-11	0.76	up to 14,361 European ancestry cases, up to 42,923 European ancestry controls, up to 4,873 East Asian ancestry cases, up to 17,642 East Asian ancestry controls	NA	NA	NA	NA	NA
+rs1950897	Rheumatoid arthritis	RAD51B	RAD51B	5E-8	0.71	up to 14,361 European ancestry cases, up to 42,923 European ancestry controls, up to 4,873 East Asian ancestry cases, up to 17,642 East Asian ancestry controls	NA	NA	NA	NA	NA
+rs1950897	Respiratory diseases	RAD51B	NA	5E-11	NR	approximately 459,000 European ancestry individuals	NA	NA	NA	NA	NA
+rs1950897	Lung function (FEV1/FVC)	RAD51B	NA	1E-7	NR	approximately 370,000 European ancestry individuals	NA	NA	NA	NA	NA
+rs1950897	Allergic disease (asthma, hay fever or eczema)	RAD51B	NR	3E-13	0.2869	106,772 European ancestry cases, 239,773 European ancestry controls	NA	NA	NA	NA	NA
+rs1950897	Asthma	RAD51B	RAD51B	8E-13	0.2869	41,926 European ancestry cases, 239,773 European ancestry controls	NA	NA	NA	NA	NA
+rs1950897	Rheumatoid arthritis (rheumatoid factor and/or anti-cyclic citrullinated peptide seropositive)	RAD51B	NA	5E-8	0.71	14,551 European ancestry cases, 846,260 European ancestry controls, 3,468 cases, 145,344 controls	NA	NA	NA	NA	NA
+rs1950897	Type 1 diabetes	RAD51B	NA	6E-7	0.2781	15,573 European ancestry cases, 158,408 European ancestry controls	NA	NA	NA	NA	NA
+rs1950897	Interleukin-12 subunit beta levels	RAD51B	NA	4E-10	0.72	14,735 European ancestry individuals	NA	NA	NA	NA	NA
+rs1950897	Hypothyroidism	RAD51B	NA	6E-11	NR	58,783 European ancestry cases, 633,203 European ancestry controls	NA	NA	NA	NA	NA
+rs1950897	Asthma (childhood onset)	RAD51B	RAD51B, ZFYVE26, ZFF36L1	1E-8	0.287	9,433 British ancestry cases, 318,237 British ancestry controls	NA	NA	NA	NA	NA
+rs1950897	Respiratory disease (confirmatory factor analysis Factor 11)	RAD51B	NA	4E-15	NR	360,406 European ancestry individuals	NA	NA	NA	NA	NA
+rs2212434	Inflammatory skin disease	EMSY - LINC02757	C11orf30	3E-12	NR	2,079 European ancestry atopic dermatitis cases, 4,212 European ancestry psoriasis cases, 11,899 European ancestry controls	NA	NA	NA	NA	NA
+rs2212434	Atopic dermatitis	EMSY - LINC02757	C11orf30, LRRC32	5E-13	0.45	18,900 European ancestry cases, 1,472 Japanese ancestry cases, 422 African American cases, 300 Latino cases, 305 cases, 84,166 European ancestry controls, 7,966 Japanese ancestry controls, 844 African American controls, 1,592 Latino controls, 896 controls	NA	NA	NA	NA	NA
+rs2212434	Food allergy	EMSY - LINC02757	C11orf30, LRRC32	9E-11	0.459	497 European ancestry cases, 2,387 European ancestry controls	NA	NA	NA	NA	NA
+rs2212434	Psoriasis	EMSY - LINC02757	NA	3E-8	NR	36,466 European ancestry cases, 458,078 European ancestry controls	NA	NA	NA	NA	NA
+rs2212434	ICD10 K50, K51: inflammatory bowel disease	EMSY - LINC02757	NA	4E-9	NR	116,382 European ancestry cases, 213,325 European ancestry controls	NA	NA	NA	NA	NA
+rs2212434	Atopic dermatitis	EMSY - LINC02757	NA	8E-21	NR	33,262 European ancestry cases, 804,234 European ancestry controls	NA	NA	NA	NA	NA
+rs2212434	Type 1 diabetes	EMSY - LINC02757	NA	4E-8	0.4489	15,573 European ancestry cases, 158,408 European ancestry controls	NA	NA	NA	NA	NA
+rs2212434	Basal cell carcinoma (PheCode 172.21)	EMSY - LINC02757	NA	1E-14	0.563	31,142 European ancestry cases, 404,406 European ancestry controls	NA	NA	NA	NA	NA
+rs2212434	Basal cell carcinoma (PheCode 172.21)	EMSY - LINC02757	NA	2E-11	0.5676	768 Hispanic or Latin American cases, 58,733 Hispanic or Latin American controls, 31,142 European ancestry cases, 404,406 European ancestry controls	NA	NA	NA	NA	NA
+rs2290400	Bronchial hyperresponsiveness in asthma	GSDMB	GSDMA, GSDMB, CRKRS, ORMDL3, PERLD1, IKZF3, PNMT	3E-20	NR	920 Dutch ancestry cases, 980 Dutch ancestry controls	NA	NA	NA	NA	NA
+rs2290400	Type 1 diabetes	GSDMB	ORMDL3	6E-13	0.50	7,514 European ancestry cases, 9,045 European ancestry controls	NA	NA	NA	NA	NA
+rs2290400	Asthma and cardiovascular disease	GSDMB	NA	7E-44	NR	19,954 European ancestry cases, 107,715 European ancestry controls	NA	NA	NA	NA	NA
+rs2290400	Acute lymphoblastic leukemia (childhood)	GSDMB	IKZF3	1E-9	NR	1,949 Latino cases, 8,584 Latino controls, 1,184 European ancestry cases, 3551 European ancestry controls, 130 African American cases, 3,842 African American controls	NA	NA	NA	NA	NA
+rs2290400	Asthma	GSDMB	NA	3E-37	NR	37,227 European ancestry cases, 124,132 European ancestry controls	NA	NA	NA	NA	NA
+rs2290400	COVID-19 (hospitalized covid vs population)	GSDMB	NA	1E-6	NR	4,702 Admixed Latin American ancestry cases, 68,573 Admixed Latin American ancestry controls, European, African, East Asian, South Asian or Admixed American individuals (See The COVID-19 Host Genetics Initiative, v7 ALL B2)	NA	NA	NA	NA	NA
+rs2647044	Type 1 diabetes	HLA-DQB1 - MTCO3P1	HLA-DRB1	1E-16	0.13	467 European ancestry trios, 561 European ancestry cases, 1,143 European ancestry controls	NA	NA	NA	NA	NA
+rs2647044	Pulmonary function	HLA-DQB1 - MTCO3P1	HLA-DQB1	6E-6	NR	48,201 European ancestry individuals	NA	NA	NA	NA	NA
+rs2647044	Asthma	HLA-DQB1 - MTCO3P1	BRD2, BTNL2, C6orf10, HCG23, HLA-DMA, HLA-DMB, HLA-DOA, HLA-DOB, HLA-DPA1, HLA-DQA1, HLA-DQA2, HLA-DQB1, HLA-DQB2, HLA-DRA, HLA-DRB1, HLA-DRB5, HLA-DRB6, LOC100294145, NOTCH4, PSMB8, PSMB9, TAP1, TAP2, TAPSAR1	4E-15	0.14736	46,802 European ancestry cases, 347,481 European ancestry controls	NA	NA	NA	NA	NA
+rs2647044	Seropositivity for staphylococcus aureus peptide (agilent_226247)	HLA-DQB1 - MTCO3P1	NA	1E-17	NR	1,745 individuals	NA	NA	NA	NA	NA
+rs2647044	Seropositivity for staphylococcaceae peptide (agilent_4825)	HLA-DQB1 - MTCO3P1	NA	1E-20	NR	1,745 individuals	NA	NA	NA	NA	NA
+rs2647044	Seropositivity for staphylococcus aureus peptide (agilent_222381)	HLA-DQB1 - MTCO3P1	NA	4E-22	NR	1,745 individuals	NA	NA	NA	NA	NA
+rs2647044	Seropositivity for staphylococcus aureus peptide (agilent_236333)	HLA-DQB1 - MTCO3P1	NA	5E-19	NR	1,745 individuals	NA	NA	NA	NA	NA
+rs2872507	Crohn's disease	ZPBP2 - GSDMB	ORMDL3	5E-9	0.47	3,230 European ancestry cases, 4,829 European ancestry controls	NA	NA	NA	NA	NA
+rs2872507	Ulcerative colitis	ZPBP2 - GSDMB	GSDML, IKZF3, ZPBP2, ORMDL3, PNMT	5E-11	0.46	6,687 European ancestry cases, 19,718 European ancestry controls	NA	NA	NA	NA	NA
+rs2872507	Crohn's disease	ZPBP2 - GSDMB	IKZF3, GSMDL, ZPBP2, ORMDL3	2E-9	0.458	6,333 European ancestry cases, 15,056 European ancestry controls	NA	NA	NA	NA	NA
+rs2872507	Type 1 diabetes	ZPBP2 - GSDMB	ORMDL3	2E-6	NR	8,506 European ancestry cases, up to 10,596 European ancestry controls	NA	NA	NA	NA	NA
+rs2872507	Asthma and cardiovascular disease	ZPBP2 - GSDMB	NA	1E-34	NR	19,954 European ancestry cases, 107,715 European ancestry controls	NA	NA	NA	NA	NA
+rs2872507	Rheumatoid arthritis (ACPA-positive)	ZPBP2 - GSDMB	IKZF3, GSDMB, ORMDL3	3E-9	0.47	up to 9,585 European ancestry cases, up to 33,742 European ancestry controls	NA	NA	NA	NA	NA
+rs2872507	Rheumatoid arthritis	ZPBP2 - GSDMB	NA	9E-7	0.47	5,539 European ancestry cases, 20,169 European ancestry controls	NA	NA	NA	NA	NA
+rs2941522	Type 1 diabetes (age at diagnosis)	GRB7 - IKZF3	GRB7	7E-9	0.575	12,539 European ancestry individuals	NA	NA	NA	NA	NA
+rs2941522	Asthma (moderate or severe)	GRB7 - IKZF3	IKZF3	2E-12	0.4829	5,135 European ancestry cases, 25,675 European ancestry controls	NA	NA	NA	NA	NA
+rs2941522	LTA protein levels	GRB7 - IKZF3	NA	3E-13	0.48310065	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs56380902	Type 1 diabetes	GSDMB	IKZF3, ORMDL3, GSDMB	1E-8	0.44	1,021 African American cases, 2,928 African American controls	NA	NA	NA	NA	NA
+rs56380902	Atopic asthma	GSDMB	NR	6E-39	NR	23,982 European ancestry cases, 393,169 European ancestry controls	NA	NA	NA	NA	NA
+rs597808	Hypothyroidism	ATXN2	ATXN2/SH2B3	4E-12	0.51	3,340 European ancestry cases, 49,983 European ancestry controls	NA	NA	NA	NA	NA
+rs597808	Gastroesophageal reflux disease	ATXN2	ATXN2, BRAP, SH2B3	6E-9	NR	80,265 European and unknown ancestry cases, 305,011 European and unknown ancestry controls	NA	NA	NA	NA	NA
+rs597808	Colorectal cancer or advanced adenoma	ATXN2	SH2B3	3E-16	0.5166	55,105 European ancestry cases, 3,026 East Asian ancestry cases, 65,079 European ancestry controls, 2,268 East Asian ancestry controls	NA	NA	NA	NA	NA
+rs597808	Diastolic blood pressure x alcohol consumption interaction (2df test)	ATXN2	ATXN2	8E-60	0.47	63,607 European ancestry drinkers, 10,193 African American or Afro-Caribbean drinkers, 2,441 Asian ancestry drinkers, 5,084 Hispanic or Latin American drinkers, 27,492 European ancestry non-drinkers, 11,223 African American or Afro-Caribbean non-drinkers, 9,924 Asian ancestry non-drinkers, 3,387 Hispanic or Latin American non-drinkers	NA	NA	NA	NA	NA
+rs597808	Systolic blood pressure x alcohol consumption interaction (2df test)	ATXN2	ATXN2	8E-32	0.49	63,608 European ancestry drinkers, 10,193 African American or Afro-Caribbean heavy drinkers,  2,441 Asian ancestry drinkers, 5,084 Hispanic or Latin American drinkers, 27,494 European ancestry non-drinkers, 11,224 African American or Afro-Caribbean non-drinkers, 9,924 Asian ancestry non-drinkers, 3,387 Hispanic or Latin American non-drinkers	NA	NA	NA	NA	NA
+rs597808	Systemic lupus erythematosus	ATXN2	SH2B3	6E-10	NR	5,201 European ancestry cases, 9,066 European ancestry controls	NA	NA	NA	NA	NA
+rs597808	Allergic disease (asthma, hay fever and/or eczema) (multivariate analysis)	ATXN2	ATXN2	3E-15	0.523	477,968 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Allergic disease (asthma, hay fever and/or eczema) (age of onset)	ATXN2	ATXN2	2E-15	0.523	117,130 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Lymphocyte Absolute Count	ATXN2	NA	9E-9	0.53628	3,653 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Blood cell traits latent factor 10 (platelet)	ATXN2	NA	8E-23	NR	18,310 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Waist-hip ratio	ATXN2	NA	3E-9	NR	approximately 458,000 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Smoking status (ever vs never smokers)	ATXN2	ATXN2	2E-11	0.4837	518,633 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	LDL cholesterol levels	ATXN2	ATXN2	2E-38	0.484083	440,546 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Mean corpuscular hemoglobin	ATXN2	NA	4E-24	NR	approximately 443,000 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Apolipoprotein B levels	ATXN2	ATXN2	2E-25	0.484096	439,214 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Low density lipoprotein cholesterol levels	ATXN2	ATXN2	4E-23	NR	324,708 British ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Hematocrit	ATXN2	NA	9E-13	0.6043	16,184 African American individuals, 20,704 Hispanic or Latin American individuals, 29,383 European ancestry individuals, 631 Asian ancestry individuals, 601 Native American ancestry individuals, 381 individuals	NA	NA	NA	NA	NA
+rs597808	Hematocrit	ATXN2	NA	3E-12	0.5055	29,383 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Hemoglobin concentration	ATXN2	NA	2E-15	0.6043	16,186 African American individuals, 20,692 Hispanic or Latin American individuals, 29,379 European ancestry individuals, 630 Asian ancestry individuals, 601 Native American ancestry individuals, 381 individuals	NA	NA	NA	NA	NA
+rs597808	Hemoglobin concentration	ATXN2	NA	2E-14	0.5055	29,379 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Allergic rhinitis	ATXN2	ATXN2	2E-8	0.5183	18,915 European ancestry cases, 239,773 European ancestry controls	NA	NA	NA	NA	NA
+rs597808	Medication use for hypertension (number of purchases)	ATXN2	NA	1E-49	NR	567,671 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Total lipids in IDL (UKB data field 23524)	ATXN2	NA	6E-11	0.485889	88,329 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Phospholipids in IDL (UKB data field 23525)	ATXN2	NA	4E-10	0.485889	88,329 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Cholesteryl esters in IDL (UKB data field 23527)	ATXN2	NA	3E-11	0.485889	88,329 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Cholesterol in IDL (UKB data field 23526)	ATXN2	NA	2E-11	0.485889	88,329 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Diastolic blood pressure	ATXN2	NA	4E-54	NR	340,162 European ancestry individuals, 145,515 East Asian ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Type 1 diabetes	ATXN2	NA	6E-10	NR	3,428 European ancestry cases, 3,428 European ancestry controls	NA	NA	NA	NA	NA
+rs597808	Type 1 diabetes	ATXN2	NA	5E-11	NR	409 African American or Afro-Caribbean cases, 482 African American or Afro-Caribbean controls, 153 Hispanic or Latin American cases, 155 Hispanic or Latin American controls, 3,428 European ancestry cases, 3,428 European ancestry controls	NA	NA	NA	NA	NA
+rs597808	Total cholesterol levels	ATXN2	NA	5E-8	0.72634	48,057 Hispanic individuals	NA	NA	NA	NA	NA
+rs597808	Cholesterol to Total Lipids in Large LDL percentage	ATXN2	NA	1E-64	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Omega-6 fatty acid levels	ATXN2	NA	4E-13	NR	110,346 European ancestry males	NA	NA	NA	NA	NA
+rs597808	Phospholipids in large LDL	ATXN2	NA	1E-40	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Triglycerides to Total Lipids in Large LDL percentage	ATXN2	NA	2E-56	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesteryl Esters in IDL	ATXN2	NA	2E-43	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Clinical LDL cholesterol levels	ATXN2	NA	1E-41	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesterol to Total Lipids in IDL percentage	ATXN2	NA	1E-44	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Phospholipids in LDL	ATXN2	NA	4E-39	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Heart failure	ATXN2	NA	6E-14	0.5408	5,791 African ancestry cases, 20,883 African ancestry controls, 1,170 American ancestry cases, 13,217 American ancestry controls, 95,524 European ancestry cases, 1,270,968 European ancestry controls, 17,718 East Asian ancestry cases, 247,144 East Asian ancestry controls	NA	NA	NA	NA	NA
+rs597808	Cholesterol to Total Lipids in Medium LDL percentage	ATXN2	NA	1E-33	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Triglycerides to Total Lipids in Medium LDL percentage	ATXN2	NA	6E-49	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesterol in Medium VLDL	ATXN2	NA	3E-30	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesterol to Total Lipids in Medium VLDL percentage	ATXN2	NA	2E-38	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesteryl Esters in Medium VLDL	ATXN2	NA	5E-35	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Triglycerides to Total Lipids in Medium VLDL percentage	ATXN2	NA	4E-38	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Concentration of medium LDL particles	ATXN2	NA	1E-23	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesteryl Esters to Total Lipids in Medium VLDL percentage	ATXN2	NA	3E-36	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Free Cholesterol to Total Lipids in Medium VLDL percentage	ATXN2	NA	5E-42	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Free cholesterol in medium LDL	ATXN2	NA	8E-43	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Phospholipids to Total Lipids in Medium VLDL percentage	ATXN2	NA	3E-32	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesterol in Large LDL	ATXN2	NA	4E-45	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Free Cholesterol to Total Lipids in Large LDL percentage	ATXN2	NA	2E-28	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Free cholesterol in large LDL	ATXN2	NA	5E-48	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Total lipids in large LDL	ATXN2	NA	6E-42	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesterol to Total Lipids in Small LDL percentage	ATXN2	NA	1E-10	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Total cholesterol minus HDL-C levels	ATXN2	NA	2E-33	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Apolipoprotein B levels	ATXN2	NA	3E-28	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesterol in IDL	ATXN2	NA	9E-45	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesteryl Esters to Total Lipids in IDL percentage	ATXN2	NA	6E-27	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Free Cholesterol in LDL	ATXN2	NA	8E-47	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesterol to Total Lipids in Very Large VLDL percentage	ATXN2	NA	6E-19	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesteryl Esters to Total Lipids in Very Large VLDL percentage	ATXN2	NA	2E-16	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Free Cholesterol to Total Lipids in Very Large VLDL percentage	ATXN2	NA	7E-23	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesterol levels in very small VLDL	ATXN2	NA	2E-23	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Free Cholesterol to Total Lipids in Very Small VLDL percentage	ATXN2	NA	2E-31	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesterol esters in very small VLDL	ATXN2	NA	3E-26	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Phospholipids to Total Lipids in Very Small VLDL percentage	ATXN2	NA	3E-25	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Free cholesterol in very small VLDL	ATXN2	NA	3E-16	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Concentration of very small VLDL particles	ATXN2	NA	3E-13	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Triglycerides to Total Lipids in Very Large VLDL percentage	ATXN2	NA	4E-20	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesterol to Total Lipids in Very Small VLDL percentage	ATXN2	NA	1E-46	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesteryl Esters to Total Lipids in Very Small VLDL percentage	ATXN2	NA	1E-45	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Total lipids in very small VLDL	ATXN2	NA	4E-13	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Triglycerides to Total Lipids in Very Small VLDL percentage	ATXN2	NA	5E-43	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Linoleic acid levels	ATXN2	NA	9E-11	NR	110,346 European ancestry males	NA	NA	NA	NA	NA
+rs597808	Phospholipids to Total Lipids in Chylomicrons and Extremely Large VLDL percentage	ATXN2	NA	4E-16	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Left ventricular stroke volume	ATXN2	NA	5E-10	NR	32,528 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Age of onset of childhood onset asthma	ATXN2	NA	1E-8	NR	20,964 European ancestry cases, 674,014 European ancestry controls	NA	NA	NA	NA	NA
+rs597808	High-density lipoprotein levels (MTAG)	ATXN2	NA	5E-22	NR	361,194 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Low-density lipoprotein levels (MTAG)	ATXN2	NA	9E-15	NR	361,194 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Reactive lymphocyte count	ATXN2	NA	4E-23	0.5182	30,589 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Lymphocyte side fluorescence	ATXN2	NA	1E-20	0.5177	39,640 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Macrocytic percentage of red cells	ATXN2	NA	1E-14	0.5186	37,432 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Polyunsaturated fatty acid levels	ATXN2	NA	2E-12	NR	110,346 European ancestry males	NA	NA	NA	NA	NA
+rs597808	Polyunsaturated fatty acid levels	ATXN2	NA	4E-9	NR	110,346 European ancestry males	NA	NA	NA	NA	NA
+rs597808	Heart failure	ATXN2	NA	4E-17	0.4634	168,363 European ancestry cases, 1,725,558 European ancestry controls, 21,202 African ancestry cases, 121,670 African ancestry controls, 12,665 East Asian ancestry cases, 245,263 East Asian ancestry controls, 5,116 Hispanic or Latin American cases, 58,719 Hispanic or Latin American controls	NA	NA	NA	NA	NA
+rs597808	Plasma protease C1 inhibitor levels	ATXN2	NA	3E-14	0.47	10,708 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Tibia length to body height ratio	ATXN2	NA	6E-10	NR	31,221 British ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Lymphocyte-to-monocyte ratio	ATXN2	NA	4E-25	0.485	234,184 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Hematocrit	ATXN2	NA	2E-12	NR	33,324 Amish, White ancestry individuals, 654 Asian ancestry individuals, 14,474 Black individuals, 14,035 ﻿Central American ancestry, ﻿Cuban ancestry, ﻿Dominican ancestry, ﻿Mexican ancestry, ﻿Puerto Rican ancestry, ﻿South American ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Hemoglobin	ATXN2	NA	3E-14	NR	33,325 Amish, White ancestry individuals, 653 Asian ancestry individuals, 14,454 Black individuals, 14,029 ﻿Central American ancestry, ﻿Cuban ancestry, ﻿Dominican ancestry, ﻿Mexican ancestry, ﻿Puerto Rican ancestry, ﻿South American ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Whole brain restricted isotropic diffusion (multivariate analysis)	ATXN2	NA	8E-25	NR	23,543 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	1-(1-enyl-palmitoyl)-2-linoleoyl-GPC (p-16:0/18:2) levels	ATXN2	NA	3E-10	0.48	14,296 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Total cholesterol levels	ATXN2	NA	2E-38	NR	344,278 European ancestry individuals, 135,808 East Asian ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Free cholesterol to total lipids ratio in large HDL	ATXN2	NA	3E-10	0.4539	4,435 East Asian ancestry individuals, 11,340 South Asian ancestry individuals, 120,241 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Diastolic blood pressure	ATXN2	NA	2E-102	NR	404,337 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Systolic blood pressure	ATXN2	NA	4E-38	NR	404,507 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Colorectal cancer	ATXN2	NR	8E-15	NR	31,197 European ancestry cases, 61,770 European ancestry controls	NA	NA	NA	NA	NA
+rs597808	Free cholesterol in IDL	ATXN2	NA	6E-47	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Concentration of IDL particles	ATXN2	NA	4E-27	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Phospholipids in IDL	ATXN2	NA	6E-38	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Triglycerides to Total Lipids in IDL percentage	ATXN2	NA	2E-54	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Heart failure	ATXN2	NA	6E-12	0.4681	139,533 European ancestry cases, 1,568,809 European ancestry controls, 9,413 East Asian ancestry cases, 203,040 East Asian ancestry controls, 3,292 African ancestry cases, 13,574 African ancestry controls, 779 South Asian ancestry cases, 28,150 South Asian ancestry controls, 157 Admixed American ancestry cases, 2,059 Admixed American ancestry controls	NA	NA	NA	NA	NA
+rs597808	Total lipids in IDL	ATXN2	NA	3E-40	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Triglycerides to Total Lipids in Small LDL percentage	ATXN2	NA	1E-43	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Free cholesterol in small LDL	ATXN2	NA	1E-45	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Cholesterol to Total Lipids in Small VLDL percentage	ATXN2	NA	4E-31	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Remnant cholesterol (non-HDL, non-LDL -cholesterol)	ATXN2	NA	6E-27	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Free Cholesterol to Total Lipids in Small VLDL percentage	ATXN2	NA	2E-53	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Phospholipids to Total Lipids in Small VLDL percentage	ATXN2	NA	3E-55	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Triglycerides to Total Lipids in Small VLDL percentage	ATXN2	NA	1E-38	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs597808	Mean corpuscular haemoglobin (UKB data field 30050)	ATXN2	NA	8E-22	0.5166277	394,642 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	CD38 protein levels	ATXN2	NA	2E-32	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	ATG4A protein levels	ATXN2	NA	3E-13	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	ASAH1 protein levels	ATXN2	NA	2E-15	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	APEX1 protein levels	ATXN2	NA	8E-20	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	CD86 protein levels	ATXN2	NA	5E-78	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	CD80 protein levels	ATXN2	NA	9E-75	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	CD84 protein levels	ATXN2	NA	1E-41	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	FUS protein levels	ATXN2	NA	1E-11	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	IL15RA protein levels	ATXN2	NA	3E-19	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	F2R protein levels	ATXN2	NA	8E-13	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	ZBTB17 protein levels	ATXN2	NA	9E-13	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	UBAC1 protein levels	ATXN2	NA	4E-14	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	GPKOW protein levels	ATXN2	NA	5E-12	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	FCRL3 protein levels	ATXN2	NA	2E-18	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	FKBP4 protein levels	ATXN2	NA	5E-18	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	GDF2 protein levels	ATXN2	NA	6E-19	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	GNLY protein levels	ATXN2	NA	2E-19	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	ERMAP protein levels	ATXN2	NA	2E-14	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	HDGFL2 protein levels	ATXN2	NA	8E-12	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	HDGF protein levels	ATXN2	NA	1E-12	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	IL1RN protein levels	ATXN2	NA	1E-15	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	KYAT1 protein levels	ATXN2	NA	1E-12	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	LTB protein levels	ATXN2	NA	2E-18	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	OGFR protein levels	ATXN2	NA	3E-17	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	PDCD5 protein levels	ATXN2	NA	7E-12	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	PARP1 protein levels	ATXN2	NA	1E-11	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	IL32 protein levels	ATXN2	NA	4E-12	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	LAG3 protein levels	ATXN2	NA	9E-60	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	MCAM protein levels	ATXN2	NA	8E-20	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	NSFL1C protein levels	ATXN2	NA	3E-13	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Reticulocyte percentage (UKB data field 30240)	ATXN2	NA	3E-142	0.5166277	394,642 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Body mass index (BMI, mean, inv-normal transformed)	ATXN2	NA	6E-14	0.392	118,993 African American or Afro-Caribbean individuals, 57,793 Hispanic or Latin American individuals, 6,384 East Asian ancestry individuals, 424,221 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	PT international normalized ratio (INR, mean, inv-norm transformed)	ATXN2	NA	5E-12	0.391	49,317 African American or Afro-Caribbean individuals, 23,464 Hispanic or Latin American individuals, 1,798 East Asian ancestry individuals, 165,956 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	PT international normalized ratio (INR, minimum, inv-norm transformed)	ATXN2	NA	2E-12	0.3908	49,241 African American or Afro-Caribbean individuals, 23,426 Hispanic or Latin American individuals, 1,793 East Asian ancestry individuals, 165,202 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Weight (minimum, inv-normal transformed)	ATXN2	NA	2E-43	0.495	425,537 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	What is your weight? (pounds, inv-normal transformed)	ATXN2	NA	1E-25	0.4952	288,216 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	eosinophil (absolute count, mean, inv-norm transformed)	ATXN2	NA	1E-36	0.0851	90,448 African American or Afro-Caribbean individuals	NA	NA	NA	NA	NA
+rs597808	eosinophil (absolute count, minimum, inv-norm transformed)	ATXN2	NA	7E-22	0.08512	90,479 African American or Afro-Caribbean individuals	NA	NA	NA	NA	NA
+rs597808	eosinophil (absolute count, maximum, inv-norm transformed)	ATXN2	NA	1E-27	0.08511	90,403 African American or Afro-Caribbean individuals	NA	NA	NA	NA	NA
+rs597808	red blood cell count (RBC, mean, inv-norm transformed)	ATXN2	NA	2E-22	0.4951	405,366 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	neutrophil (fraction, maximum, inv-norm transformed)	ATXN2	NA	4E-34	0.399	65,556 African American or Afro-Caribbean individuals, 38,543 Hispanic or Latin American individuals, 3,443 East Asian ancestry individuals, 261,863 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Myocardial infarction (PheCode 411.2)	ATXN2	NA	6E-12	0.4948	39,074 European ancestry cases, 392,979 European ancestry controls	NA	NA	NA	NA	NA
+rs597808	monocyte (absolute count, mean, inv-norm transformed)	ATXN2	NA	5E-48	0.3919	73,140 African American or Afro-Caribbean individuals, 37,364 Hispanic or Latin American individuals, 3,880 East Asian ancestry individuals, 259,608 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	eosinophil (fraction, mean, inv-norm transformed)	ATXN2	NA	5E-25	0.08465	98,055 African American or Afro-Caribbean individuals	NA	NA	NA	NA	NA
+rs597808	CPPED1 protein levels	ATXN2	NA	2E-13	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	CPE protein levels	ATXN2	NA	4E-32	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	CPA4 protein levels	ATXN2	NA	5E-14	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	CLEC6A protein levels	ATXN2	NA	2E-54	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	CSTB protein levels	ATXN2	NA	2E-15	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	CXCL6 protein levels	ATXN2	NA	3E-23	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	DDX58 protein levels	ATXN2	NA	7E-13	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	DNPH1 protein levels	ATXN2	NA	1E-12	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	DPY30 protein levels	ATXN2	NA	2E-15	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	EGLN1 protein levels	ATXN2	NA	1E-11	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	EIF4EBP1 protein levels	ATXN2	NA	3E-14	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	ELOA protein levels	ATXN2	NA	2E-17	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	RILP protein levels	ATXN2	NA	2E-16	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	SCARF1 protein levels	ATXN2	NA	2E-29	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	SRP14 protein levels	ATXN2	NA	3E-18	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	PSIP1 protein levels	ATXN2	NA	1E-23	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	PSME1 protein levels	ATXN2	NA	8E-18	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	PSME2 protein levels	ATXN2	NA	3E-16	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	PSMG3 protein levels	ATXN2	NA	1E-12	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	SH2D1A protein levels	ATXN2	NA	3E-36	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	SLITRK2 protein levels	ATXN2	NA	4E-14	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	SMNDC1 protein levels	ATXN2	NA	5E-14	0.51407665	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	red blood cell count (RBC, mean, inv-norm transformed)	ATXN2	NA	2E-14	0.3916	114,768 African American or Afro-Caribbean individuals, 55,750 Hispanic or Latin American individuals, 5,943 East Asian ancestry individuals, 405,366 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	eosinophil (fraction, minimum, inv-norm transformed)	ATXN2	NA	1E-13	0.08465	98,055 African American or Afro-Caribbean individuals	NA	NA	NA	NA	NA
+rs597808	Basophil (absolute count, mean, inv-norm transformed)	ATXN2	NA	1E-14	0.3924	45,900 African American or Afro-Caribbean individuals, 20,397 Hispanic or Latin American individuals, 2,442 East Asian ancestry individuals, 158,583 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Splenomegaly (PheCode 579.2)	ATXN2	NA	7E-16	0.3979	266 African American or Afro-Caribbean cases, 121,247 African American or Afro-Caribbean controls, 3,254 European ancestry cases, 443,293 European ancestry controls, 333 Hispanic or Latin American cases, 59,065 Hispanic or Latin American controls	NA	NA	NA	NA	NA
+rs597808	Peripheral vascular disease, unspecified (PheCode 443.9)	ATXN2	NA	6E-18	0.3982	9,303 African American or Afro-Caribbean cases, 106,823 African American or Afro-Caribbean controls, 39,519 European ancestry cases, 388,133 European ancestry controls, 3,360 Hispanic or Latin American cases, 53,947 Hispanic or Latin American controls	NA	NA	NA	NA	NA
+rs597808	white blood cell count (WBC, minimum, inv-norm transformed)	ATXN2	NA	1E-82	0.3915	108,942 African American or Afro-Caribbean individuals, 49,991 Hispanic or Latin American individuals, 5,838 East Asian ancestry individuals, 381,267 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	What is your weight? (pounds, inv-normal transformed)	ATXN2	NA	3E-13	0.4197	52,481 African American or Afro-Caribbean individuals, 27,471 Hispanic or Latin American individuals, 3,165 East Asian ancestry individuals, 288,216 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Weight (minimum, inv-normal transformed)	ATXN2	NA	3E-21	0.392	119,286 African American or Afro-Caribbean individuals, 57,954 Hispanic or Latin American individuals, 6,419 East Asian ancestry individuals, 425,537 European ancestry individuals	NA	NA	NA	NA	NA
+rs597808	Sodium (mean, inv-norm transformed)	ATXN2	NA	2E-19	0.3919	118,487 African American or Afro-Caribbean individuals, 57,407 Hispanic or Latin American individuals, 6,310 East Asian ancestry individuals, 421,240 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Crohn's disease	IL2RA	DKFZP667F0711, IL2RA, RBM17, PFKFB3, PRKCQ	2E-8	NR	12,194 European and unknown ancestry cases, 28,072 European and unknown ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Type 1 diabetes	IL2RA	IL2RA	3E-39	0.9	6,683 European ancestry cases, 12,173 European ancestry controls, 2,601 European ancestry affected sibling pair families, 69 European ancestry trios	NA	NA	NA	NA	NA
+rs61839660	Asthma or allergic disease (pleiotropy)	IL2RA	IL2RA, RBM17	2E-11	NR	14,085 European asthma cases, 25,685 European ancestry allergic diseases cases, 76,768 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Allergic disease (asthma, hay fever or eczema)	IL2RA	IL2RA, RBM17	4E-12	NR	25,685 European ancestry allergic diseases cases, 76,768 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Lymphocyte count	IL2RA	IL2RA	3E-23	0.098316	408,112 British individuals	NA	NA	NA	NA	NA
+rs61839660	Lymphocyte percentage of white cells	IL2RA	IL2RA	5E-29	0.098318	408,112 British individuals	NA	NA	NA	NA	NA
+rs61839660	Neutrophil percentage of white cells	IL2RA	IL2RA	3E-14	0.098328	408,112 British individuals	NA	NA	NA	NA	NA
+rs61839660	Allergic disease (asthma, hay fever or eczema)	IL2RA	IL2RA	4E-19	0.07	180,129 European ancestry cases, 180,709 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Chronic inflammatory diseases (ankylosing spondylitis, Crohn's disease, psoriasis, primary sclerosing cholangitis, ulcerative colitis) (pleiotropy)	IL2RA	IL2RA	1E-15	NR	8,726 European ancestry ankylosing spondylitis cases, 19,085 European ancestry Crohn’s disease cases, 6,530 European ancestry psoriasis cases, 3,408 European ancestry primary sclerosing cholangitis cases, 14,513 European ancestry ulcerative colitis cases, 34,213 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Lymphocyte percentage of white cells	IL2RA	IL2RA	2E-10	0.0988	171,748 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Systemic lupus erythematosus	IL2RA	IL2RA	9E-6	NR	6,748 European ancestry cases, 11,516 European ancestry controls, 2,970 African American cases, 2,452 African American controls, 1,872 Hispanic cases, 2,016 Hispanic controls	NA	NA	NA	NA	NA
+rs61839660	Type 1 diabetes	IL2RA	IL2RA	5E-9	NR	16,179 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	CD25 on CD28+ CD4+ T cell	IL2RA	NA	2E-16	0.05754	2,920 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	CD25 on CD45RA- CD4 not regulatory T cell	IL2RA	NA	7E-28	0.05444	3,435 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	CD25 on CD4+ T cell	IL2RA	NA	1E-11	0.05754	2,920 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Secreting CD4 regulatory T cell Absolute Count	IL2RA	NA	2E-9	0.05419	3,405 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Activated & secreting CD4 regulatory T cell Absolute Count	IL2RA	NA	8E-9	0.05419	3,405 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Activated & secreting CD4 regulatory T cell %CD4+ T cell	IL2RA	NA	1E-13	0.05426	3,437 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	CD25++ CD4+ T cell Absolute Count	IL2RA	NA	4E-16	0.05419	3,405 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	CD25++ CD4+ T cell %CD4+ T cell	IL2RA	NA	2E-26	0.05426	3,437 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	CD25++ CD4+ T cell %T cell	IL2RA	NA	3E-20	0.05426	3,437 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	CD25++ CD45RA- CD4 not regulatory T cell Absolute Count	IL2RA	NA	2E-22	0.05419	3,405 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	CD25++ CD45RA- CD4 not regulatory T cell %CD4+ T cell	IL2RA	NA	3E-28	0.05426	3,437 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	CD25++ CD45RA- CD4 not regulatory T cell %T cell	IL2RA	NA	5E-25	0.05426	3,437 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	CD25++ CD8+ T cell %T cell	IL2RA	NA	3E-8	0.05408	3,162 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Atopic dermatitis	IL2RA	NA	4E-9	NR	35,156 European ancestry cases, 846,868 European ancestry controls, 2,385 Japanese ancestry cases, 209,651 Japanese ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Inflammatory bowel disease	IL2RA	NA	1E-8	NR	18,158 European ancestry female cases, 22,345 European ancestry female controls	NA	NA	NA	NA	NA
+rs61839660	Inflammatory bowel disease	IL2RA	NA	9E-7	NR	34,579 European ancestry cases, 39,125 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Inflammatory bowel disease x sex interaction (2df)	IL2RA	NA	5E-8	NR	34,579 European ancestry cases, 39,125 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Psoriasis	IL2RA	NA	5E-12	NR	36,466 European ancestry cases, 458,078 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Eczema	IL2RA	NA	4E-38	NR	approximately 459,000 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Eczema	IL2RA	IL2RA	6E-14	0.1	7,884 European ancestry cases, 239,773 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Hay fever and/or eczema	IL2RA	NR	1E-32	0.09897	84,034 European ancestry cases, 239,773 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Allergic disease (asthma, hay fever or eczema)	IL2RA	NR	3E-28	0.09897	106,772 European ancestry cases, 239,773 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Type 1 diabetes	IL2RA	NA	2E-7	NR	3,428 European ancestry cases, 3,428 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Type 1 diabetes	IL2RA	NA	2E-8	NR	409 African American or Afro-Caribbean cases, 482 African American or Afro-Caribbean controls, 153 Hispanic or Latin American cases, 155 Hispanic or Latin American controls, 3,428 European ancestry cases, 3,428 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Type 1 diabetes	IL2RA	NA	3E-32	0.0988	15,573 European ancestry cases, 158,408 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Neutrophil-to-lymphocyte ratio	IL2RA	NA	1E-21	0.902	234,502 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Lymphocyte-to-monocyte ratio	IL2RA	NA	5E-8	NR	334,468 European ancestry, NR ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Neutrophil-to-lymphocyte ratio	IL2RA	NA	5E-8	NR	334,944 European ancestry, NR ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Lymphocyte-to-monocyte ratio	IL2RA	NA	1E-20	0.902	234,184 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Lymphocyte count	IL2RA	NA	2E-25	NR	349,856 European ancestry individuals, 95,717 East Asian ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Type 1 diabetes (age at diagnosis)	IL2RA	NA	2E-6	NR	7,923 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Neutrophils and lymphocytes in blood (confirmatory factor analysis Factor 35)	IL2RA	NA	1E-20	NR	349,613 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Lymphocyte count (UKB data field 30120)	IL2RA	NA	4E-35	0.09892255	394,642 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Lymphocyte percentage (UKB data field 30180)	IL2RA	NA	2E-36	0.09892255	394,642 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	TNFRSF17 protein levels	IL2RA	NA	1E-13	0.096387	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	LY96 protein levels	IL2RA	NA	2E-12	0.096387	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Neutrophill percentage (UKB data field 30200)	IL2RA	NA	5E-19	0.09892255	394,642 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Total protein levels (UKB data field 30860)	IL2RA	NA	3E-12	0.09892255	394,642 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Eczema	IL2RA	NA	8E-14	0.0989202	394,626 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	lymphocyte (absolute count, maximum, inv-norm transformed)	IL2RA	NA	1E-12	0.925	70,548 African American or Afro-Caribbean individuals, 36,516 Hispanic or Latin American individuals, 3,839 East Asian ancestry individuals, 253,142 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Skin condition (ex. Eczema, Psoriasis)	IL2RA	NA	2E-21	0.9064	32,976 European ancestry cases, 282,692 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Takes medication for Skin condition (ex. Eczema, Psoriasis)?	IL2RA	NA	3E-18	0.9064	17,897 European ancestry cases, 297,771 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Rash and other nonspecific skin eruption (PheCode 687.1)	IL2RA	NA	5E-14	0.9063	45,250 European ancestry cases, 340,835 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Psoriasis and related disorder (PheCode 696)	IL2RA	NA	3E-16	0.9062	16,702 European ancestry cases, 427,092 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Erythematous conditions (PheCode 695)	IL2RA	NA	2E-11	0.9062	31,200 European ancestry cases, 390,091 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Psoriasis (PheCode 696.4)	IL2RA	NA	2E-15	0.9062	16,283 European ancestry cases, 428,468 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Psoriasis vulgaris (PheCode 696.41)	IL2RA	NA	1E-15	0.9062	15,635 European ancestry cases, 429,252 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Atopic/contact dermatitis due to other or unspecified (PheCode 939)	IL2RA	NA	3E-45	0.9063	66,194 European ancestry cases, 325,245 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Atopic/contact dermatitis due to other or unspecified (PheCode 939)	IL2RA	NA	2E-42	0.925	19,557 African American or Afro-Caribbean cases, 86,442 African American or Afro-Caribbean controls, 8,084 Hispanic or Latin American cases, 44,160 Hispanic or Latin American controls, 1,273 East Asian ancestry cases, 4,783 East Asian ancestry controls, 66,194 European ancestry cases, 325,245 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	lymphocyte (fraction, mean, inv-norm transformed)	IL2RA	NA	1E-15	0.9056	290,958 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Rash and other nonspecific skin eruption (PheCode 687.1)	IL2RA	NA	3E-13	0.9249	12,714 African American or Afro-Caribbean cases, 91,520 African American or Afro-Caribbean controls, 5,723 Hispanic or Latin American cases, 45,549 Hispanic or Latin American controls, 622 East Asian ancestry cases, 5,384 East Asian ancestry controls, 45,250 European ancestry cases, 340,835 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Seborrheic dermatitis (PheCode 690.1)	IL2RA	NA	3E-16	0.9253	4,277 African American or Afro-Caribbean cases, 113,844 African American or Afro-Caribbean controls, 2,510 Hispanic or Latin American cases, 54,996 Hispanic or Latin American controls, 291 East Asian ancestry cases, 6,307 East Asian ancestry controls, 31,107 European ancestry cases, 394,738 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Erythematosquamous dermatosis (PheCode 690)	IL2RA	NA	2E-16	0.9253	4,331 African American or Afro-Caribbean cases, 113,628 African American or Afro-Caribbean controls, 2,525 Hispanic or Latin American cases, 54,902 Hispanic or Latin American controls, 292 East Asian ancestry cases, 6,302 East Asian ancestry controls, 31,321 European ancestry cases, 393,906 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	lymphocyte (fraction, maximum, inv-norm transformed)	IL2RA	NA	2E-15	0.9056	290,958 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	lymphocyte (absolute count, mean, inv-norm transformed)	IL2RA	NA	1E-20	0.9056	253,317 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	lymphocyte (absolute count, maximum, inv-norm transformed)	IL2RA	NA	3E-21	0.9056	253,142 European ancestry individuals	NA	NA	NA	NA	NA
+rs61839660	Psoriasis and related disorder (PheCode 696)	IL2RA	NA	8E-15	0.9249	1,955 African American or Afro-Caribbean cases, 118,482 African American or Afro-Caribbean controls, 1,916 Hispanic or Latin American cases, 57,083 Hispanic or Latin American controls, 255 East Asian ancestry cases, 6,480 East Asian ancestry controls, 16,702 European ancestry cases, 427,092 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Psoriasis (PheCode 696.4)	IL2RA	NA	1E-14	0.9249	1,711 African American or Afro-Caribbean cases, 119,220 African American or Afro-Caribbean controls, 1,845 Hispanic or Latin American cases, 57,348 Hispanic or Latin American controls, 245 East Asian ancestry cases, 6,518 East Asian ancestry controls, 16,283 European ancestry cases, 428,468 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Erythematous conditions (PheCode 695)	IL2RA	NA	1E-11	0.9251	6,537 African American or Afro-Caribbean cases, 109,080 African American or Afro-Caribbean controls, 3,226 Hispanic or Latin American cases, 53,688 Hispanic or Latin American controls, 313 East Asian ancestry cases, 6,221 East Asian ancestry controls, 31,200 European ancestry cases, 390,091 European ancestry controls	NA	NA	NA	NA	NA
+rs61839660	Psoriasis vulgaris (PheCode 696.41)	IL2RA	NA	9E-15	0.925	1,662 African American or Afro-Caribbean cases, 119,348 African American or Afro-Caribbean controls, 1,769 Hispanic or Latin American cases, 57,447 Hispanic or Latin American controls, 236 East Asian ancestry cases, 6,526 East Asian ancestry controls, 15,635 European ancestry cases, 429,252 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	Inflammatory bowel disease	ATXN2	SH2B3, BRAP, ACAD10, ALDH2, TMEM116, NAA25, ATXN2, MAPKAPK5, ERP29, RP11-162P23.2	2E-9	NR	25,042 European and unknown ancestry cases, 34,915 European and unknown ancestry controls	NA	NA	NA	NA	NA
+rs653178	Crohn's disease	ATXN2	SH2B3, BRAP, ACAD10, ALDH2, TMEM116, NAA25, ATXN2, MAPKAPK5, ERP29, RP11-162P23.2	7E-7	NR	12,194 European and unknown ancestry cases, 28,072 European and unknown ancestry controls	NA	NA	NA	NA	NA
+rs653178	Type 1 diabetes	ATXN2	SH2B3	2E-44	0.48	6,683 European ancestry cases, 12,173 European ancestry controls, 2,601 European ancestry affected sibling pair families, 69 European ancestry trios	NA	NA	NA	NA	NA
+rs653178	Alopecia areata	ATXN2	ATXN2, SH2B3, LNK	2E-7	NR	2,332 European ancestry cases and 5,233 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	Asthma	ATXN2	ATXN2	1E-10	0.53	84,492 European ancestry cases, 2,149 African American cases, 606 Hispanic cases, 1,239 Japanese ancestry cases, 437,036 European ancestry controls, 6,055 African American controls, 792 Hispanic controls, 3,976 Japanese ancestry controls	NA	NA	NA	NA	NA
+rs653178	Lymphocyte percentage of white cells	ATXN2	ATXN2	2E-75	0.517864	408,112 British individuals	NA	NA	NA	NA	NA
+rs653178	Neutrophil percentage of white cells	ATXN2	ATXN2	8E-111	0.517855	408,112 British individuals	NA	NA	NA	NA	NA
+rs653178	Tonsillectomy	ATXN2	NR	4E-10	NR	60,098 European ancestry cases, 113,323 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	Sarcoidosis	ATXN2	ATXN2, SH2B3	2E-10	0.5	1,726 European ancestry cases, 5,482 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	Diastolic blood pressure	ATXN2	NR	1E-7	NR	11,380 African American individuals, 21,549 Hispanic/Latino individuals, 1,086 Asian ancestry individuals, 636 Native American ancestry individuals, 782 individuals	NA	NA	NA	NA	NA
+rs653178	Eosinophil count	ATXN2	ATXN2	1E-180	0.5168	172,275 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Neutrophil percentage of granulocytes	ATXN2	ATXN2	5E-108	0.517	170,672 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Sum eosinophil basophil counts	ATXN2	ATXN2	7E-167	0.5168	171,771 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Eosinophil percentage of granulocytes	ATXN2	ATXN2	4E-126	0.517	170,536 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Monocyte count	ATXN2	ATXN2	1E-43	0.5169	170,721 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Inflammatory bowel disease	ATXN2	SH2B3, ALDH2, ATXN2	1E-8	0.4942	12,882 European ancestry cases, 21,770 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	Eosinophil percentage of white cells	ATXN2	ATXN2	3E-120	0.5168	172,378 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Myocardial infarction	ATXN2	SH2B3	3E-11	0.44	27,509 European ancestry cases, 130 African American cases, 278 Hispanic American cases, 10,257 South Asian ancestry cases, 288 Lebanese ancestry cases, 1,687 East Asian ancestry cases, 99,121 European ancestry controls, 2,778 African American controls, 3,337 Hispanic American controls, 12,899 South Asian ancestry controls, 466 Lebanese ancestry controls, 7,709 East Asian ancestry controls	NA	NA	NA	NA	NA
+rs653178	Diastolic blood pressure	ATXN2	ATXN2	5E-7	0.6037	31,516 East Asian ancestry individuals,  35,352 European ancestry individuals, 33,126 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Diastolic blood pressure	ATXN2	ATXN2	1E-8	0.5018	31,516 East Asian ancestry individuals,  35,352 European ancestry individuals, 33,126 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Total cholesterol levels	ATXN2	ATXN2	2E-22	0.5505	215,551 European ancestry individuals, 57,332 African American individuals, 24,743 Hispanic individuals	NA	NA	NA	NA	NA
+rs653178	LDL cholesterol	ATXN2	ATXN2	4E-20	0.5505	215,551 European ancestry individuals, 57,332 African American individuals, 24,743 Hispanic individuals	NA	NA	NA	NA	NA
+rs653178	Systemic lupus erythematosus	ATXN2	ATXN2	7E-9	NR	6,748 European ancestry cases, 11,516 European ancestry controls, 2,970 African American cases, 2,452 African American controls, 1,872 Hispanic cases, 2,016 Hispanic controls	NA	NA	NA	NA	NA
+rs653178	Celiac disease	ATXN2	SH2B3	7E-21	0.50	4,533 European ancestry cases, 10,750 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	Celiac disease or Rheumatoid arthritis	ATXN2	SH2B3	3E-19	NR	4,533 European ancestry celiac disease cases, 5,539 European ancestry rheumatoid arthritis cases, 27,981 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	Celiac disease	ATXN2	SH2B3, ATXN2	8E-8	0.48	767 European ancestry cases, 1,422 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	Chronic kidney disease	ATXN2	ATXN2	4E-11	0.5	Up to 67,093 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Diastolic blood pressure	ATXN2	SH2B3, ATXN2	3E-18	0.53	34,433 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Blood pressure	ATXN2	ATXN2	7E-20	0.59	74,064 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Urate levels	ATXN2	ATXN2, PTPN11	7E-12	0.51	49,825 European ancestry males, 60,522 European ancestry females	NA	NA	NA	NA	NA
+rs653178	CD45RA- CD4+ T cell Absolute Count	ATXN2	NA	1E-8	0.52871	3,395 Sardinian (founder/genetic isolate) ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Lymphocyte count	ATXN2	NR	2E-492	0.59765	643,370 African American or Afro-Caribbean, African ancestry, European ancestry, East Asian ancestry, Hispanic or Latin American and South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Psoriasis or type 2 diabetes (trans-disease meta-analysis)	ATXN2	NR	5E-8	NR	11,024 European ancestry psoriasis cases, 74,124 European ancestry diabetes cases, 840,342 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	Urate levels	ATXN2	NR	2E-54	0.52	454,183 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Serum urate levels	ATXN2	NA	2E-43	NR	677,373 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Whole body fat free mass (UKB data field 23101)	ATXN2	NA	2E-18	NR	337,739 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Triglyceride to phosphoglyceride ratio	ATXN2	NA	2E-8	0.484657	199,732 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Triglyceride percentage of total lipids in intermediate-density lipoprotein	ATXN2	NA	4E-22	0.484657	199,732 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Mean arterial pressure	ATXN2	ATXN2, SH2B3	1E-23	0.425604052030736	120,473 European ancestry individuals, 21,503 African American individuals, 4,586 Hispanic individuals	NA	NA	NA	NA	NA
+rs653178	Thyroid peroxidase antibody positivity	ATXN2	SH2B3, ATXN2	1E-9	0.40	1,769 European ancestry cases, 16,528 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	Thyroid peroxidase antibody levels	ATXN2	SH2B3, ATXN2	1E-7	0.40	12,353 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Peripheral artery disease	ATXN2	SH2B3, ATXN2	6E-7	0.469	1,641 European ancestry cases, 1,604 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	Crohn's disease	ATXN2	SH2B3, ALDH2, ATXN2	7E-8	0.4942	5,956 European ancestry cases, 14,927 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	Eczema	ATXN2	NA	4E-19	NR	approximately 459,000 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Hay fever and/or eczema	ATXN2	NR	1E-15	0.5173	84,034 European ancestry cases, 239,773 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	Allergic disease (asthma, hay fever or eczema)	ATXN2	NR	3E-14	0.5173	106,772 European ancestry cases, 239,773 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	End-diastolic bi-ventricular shape (principal component 1)	ATXN2	NA	5E-17	0.48	35,055 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Total cholesterol levels	ATXN2	NA	9E-84	NR	40,963 South Asian ancestry individuals, 48,057 Hispanic individuals, 99,432 Admixed African or African ancestry individuals, 146,492 East Asian ancestry individuals, 1,320,016 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesterol levels in very small VLDL	ATXN2	NA	7E-9	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Triglyceride to HDL cholesterol ratio	ATXN2	NA	4E-8	0.4831	216,649 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Free cholesterol in very small VLDL	ATXN2	NA	1E-11	0.546	4,435 East Asian ancestry individuals, 11,340 South Asian ancestry individuals, 120,241 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Phospholipids in very small VLDL	ATXN2	NA	2E-11	0.5462	4,435 East Asian ancestry individuals, 11,340 South Asian ancestry individuals, 120,241 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Non-HDL cholesterol levels	ATXN2	NA	1E-30	NR	40,963 South Asian ancestry individuals, 48,057 Hispanic individuals, 99,432 Admixed African or African ancestry individuals, 146,492 East Asian ancestry individuals, 1,320,016 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Low density lipoprotein cholesterol levels	ATXN2	NA	6E-61	NR	40,963 South Asian ancestry individuals, 48,057 Hispanic individuals, 99,432 Admixed African or African ancestry individuals, 146,492 East Asian ancestry individuals, 1,320,016 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Left ventricular mass (indexed to body surface area)	ATXN2	NA	2E-7	0.4708	36,083 European or unknown ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Left ventricular end systolic volume (indexed to body surface area)	ATXN2	NA	1E-10	0.4708	36,083 European or unknown ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Left ventricular end diastolic volume (indexed to body surface area)	ATXN2	NA	5E-13	0.4708	36,083 European or unknown ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Free Cholesterol to Total Lipids in IDL percentage	ATXN2	NA	4E-31	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Triglycerides to Total Lipids in Large HDL percentage	ATXN2	NA	1E-38	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Phospholipids to Total Lipids in Large VLDL percentage	ATXN2	NA	9E-16	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Cholesterol to Total Lipids in Medium HDL percentage	ATXN2	NA	8E-37	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Phospholipids to Total Lipids in Medium HDL percentage	ATXN2	NA	2E-35	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Cholesteryl Esters to Total Lipids in Medium HDL percentage	ATXN2	NA	8E-24	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Leucine levels	ATXN2	NA	2E-14	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Free Cholesterol to Total Lipids in Medium LDL percentage	ATXN2	NA	2E-23	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Red blood cell count	ATXN2	NA	5E-78	NR	507,850 East Asian ancestry individuals, 420,829 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Monounsaturated fatty acids to total fatty acids percentage	ATXN2	NA	3E-12	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Triglycerides to Total Lipids in Medium HDL percentage	ATXN2	NA	2E-31	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Degree of unsaturation	ATXN2	NA	1E-18	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Triglycerides to Total Lipids in Very Large HDL percentage	ATXN2	NA	1E-22	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Triglyceride to phosphoglyceride ratio	ATXN2	NA	3E-13	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Triglycerides to Total Lipids in Small HDL percentage	ATXN2	NA	2E-30	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Triglycerides in small HDL	ATXN2	NA	1E-12	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Free Cholesterol to Total Lipids in Small LDL percentage	ATXN2	NA	8E-24	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Polyunsaturated fatty acids to monounsaturated fatty acids ratio	ATXN2	NA	7E-12	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Cholesterol to Total Lipids in Small HDL percentage	ATXN2	NA	2E-38	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Cholesteryl Esters to Total Lipids in Small HDL percentage	ATXN2	NA	3E-23	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	Average diameter for LDL particles	ATXN2	NA	6E-20	NR	434,646 British ancestry individuals, 8,796 British Central/South Asian individuals, 6,573 British African individuals	NA	NA	NA	NA	NA
+rs653178	High eosinophilic (T2) asthma vs low eosinophilic (non-T2) asthma	ATXN2	NA	1E-19	NR	9,064 High eosinophilic (T2) asthma European ancestry individuals, 14,379 low eosinophilic (non-T2) asthma European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Left ventricular end-diastolic volume	ATXN2	NA	1E-11	NR	32,525 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Right ventricular end systolic volume	ATXN2	NA	9E-19	NR	35,928 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Monocyte side fluorescence	ATXN2	NA	3E-9	0.5168	39,586 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Eosinophil forward scatter distribution width	ATXN2	NA	2E-22	0.5148	29,084 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Systemic lupus erythematosus (MTAG)	ATXN2	NA	1E-31	NR	at least 5,877 East Asian ancestry cases, at least 188,588 East Asian ancestry controls, at least 14,355 European ancestry cases, at least 505,956 European ancestry controls, at least 1,393 admixed American ancestry cases, at least 2,327 admixed American ancestry controls (MTAG boosted by autoimmune diseases samples)	NA	NA	NA	NA	NA
+rs653178	Occipital area (unadjusted for global measures)	ATXN2	NA	4E-9	NR	32,488 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Platelet count	ATXN2	NA	6E-6	0.06	20,218 Bangladeshi ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Procollagen C-endopeptidase enhancer 2 levels	ATXN2	NA	2E-12	0.53	10,708 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Beta-2-microglobulin levels	ATXN2	NA	3E-18	0.53	10,708 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	C-X-C motif chemokine 10 levels	ATXN2	NA	5E-13	0.53	10,708 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	C-X-C motif chemokine 16 levels	ATXN2	NA	2E-34	0.53	10,708 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Lymphocyte activation gene 3 protein levels	ATXN2	NA	2E-12	0.53	10,708 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Hemoglobin concentration	ATXN2	NA	3E-66	0.484	46,904 European ancestry males	NA	NA	NA	NA	NA
+rs653178	Hemoglobin concentration	ATXN2	NA	6E-67	0.4846	52,141 European ancestry females	NA	NA	NA	NA	NA
+rs653178	Cortical thickness	ATXN2	NR	1E-17	0.4805	35,657 White British ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Neutrophil-to-lymphocyte ratio	ATXN2	NA	8E-64	0.484	234,502 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cortical surface area	ATXN2	NR	1E-17	0.4805	35,657 White British ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Serum urate levels	ATXN2	NA	4E-59	0.5205	630,117 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesteryl ester levels in medium VLDL	ATXN2	NA	5E-10	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Free cholesterol to total lipids ratio in small VLDL	ATXN2	NA	1E-11	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Triglycerides to total lipids ratio in small LDL	ATXN2	NA	5E-8	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesterol to total lipids ratio in medium VLDL	ATXN2	NA	9E-10	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Remnant cholesterol (non-HDL, non-LDL -cholesterol)	ATXN2	NA	2E-9	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Phospholipids to total lipids ratio in medium VLDL	ATXN2	NA	8E-10	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Total phospholipid levels in lipoprotein particles	ATXN2	NA	5E-11	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Sphingomyelin levels	ATXN2	NA	8E-15	0.483953	115,006 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesterol levels in medium VLDL	ATXN2	NA	4E-9	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Triglycerides to total lipids ratio in medium VLDL	ATXN2	NA	4E-10	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Free cholesterol to total lipids ratio in medium VLDL	ATXN2	NA	2E-11	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesteryl ester levels in very large HDL	ATXN2	NA	5E-10	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesteryl esters to total lipids ratio in very small VLDL	ATXN2	NA	2E-10	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesteryl ester levels in very small VLDL	ATXN2	NA	1E-9	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Triglyceride to HDL cholesterol ratio	ATXN2	NA	8E-13	0.4832	402,398 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Triglycerides to total lipids ratio in very small VLDL	ATXN2	NA	3E-10	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Triglyceride to HDL cholesterol ratio	ATXN2	NA	1E-7	0.4833	185,749 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Phospholipids to total lipids ratio in small VLDL	ATXN2	NA	4E-12	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Concentration of very large HDL particles	ATXN2	NA	8E-9	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Total free cholesterol levels	ATXN2	NA	1E-12	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesterol levels in very large HDL	ATXN2	NA	2E-9	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Total cholesterol levels	ATXN2	NA	5E-14	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Total esterified cholesterol levels	ATXN2	NA	2E-14	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Whole brain free water diffusion (multivariate analysis)	ATXN2	NA	2E-19	NR	23,543 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Free cholesterol in small LDL	ATXN2	NA	3E-22	0.5462	4,435 East Asian ancestry individuals, 11,340 South Asian ancestry individuals, 120,241 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Diastolic blood pressure	ATXN2	NA	6E-115	NR	526,001 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Colorectal cancer	ATXN2	NA	3E-24	NR	21,731 European ancestry cases, 47,444 European ancestry controls, 78,473 East Asian ancestry cases, 107,143 East Asian ancestry controls	NA	NA	NA	NA	NA
+rs653178	Triglyceride levels in non-type 2 diabetes	ATXN2	NA	3E-8	NR	402,944 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	X-12100 levels	ATXN2	NA	1E-22	0.5192	14,296 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Asthma or COVID-19 (pleiotropy)	ATXN2	NA	2E-10	NR	6,406 European ancestry COVID-19 cases, 86,008 European ancestry asthma cases, 2,478 asthma cases, 1,337,407 European ancestry controls, 12,540 controls	NA	NA	NA	NA	NA
+rs653178	Vertex-wise cortical thickness	ATXN2	NA	6E-34	0.47	33,748 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Vertex-wise sulcal depth	ATXN2	NA	2E-35	0.47	33,748 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cystatin C plasma levels	ATXN2	NA	3E-239	NR	460,858 European or unknown ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Lifetime smoking (without educational attainment)	ATXN2	NA	1E-8	NR	272,943 European or unknown ancestry cases, 226,795 European or unknown ancestry controls	NA	NA	NA	NA	NA
+rs653178	Neutrophils and lymphocytes in blood (confirmatory factor analysis Factor 35)	ATXN2	NA	3E-119	NR	349,613 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Free cholesterol levels in IDL	ATXN2	NA	4E-14	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesterol levels in large HDL	ATXN2	NA	1E-8	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesteryl esters to total lipids ratio in IDL	ATXN2	NA	2E-8	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Phospholipid levels in IDL	ATXN2	NA	4E-12	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Total cholines levels	ATXN2	NA	3E-10	0.483953	115,006 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesteryl ester levels in IDL	ATXN2	NA	3E-14	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Concentration of IDL particles	ATXN2	NA	6E-10	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Total lipid levels in IDL	ATXN2	NA	2E-13	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesterol to total lipids ratio in large HDL	ATXN2	NA	4E-11	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesterol levels in IDL	ATXN2	NA	2E-14	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesteryl ester levels in large HDL	ATXN2	NA	1E-8	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Concentration of large HDL particles	ATXN2	NA	2E-8	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Phospholipids to total lipids ratio in large HDL	ATXN2	NA	9E-10	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Free cholesterol levels in large HDL	ATXN2	NA	2E-8	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Free cholesterol to total lipids ratio in large HDL	ATXN2	NA	3E-9	0.483964	115,082 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Alanine aminotransferase levels	ATXN2	NR	3E-25	NR	342,387 European ancestry individuals, 6,017 African ancestry individuals, 7,325 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Aspartate aminotransferase to alanine aminotransferase ratio	ATXN2	NR	2E-12	NR	341,165 European ancestry individuals, 5,981 African ancestry individuals, 7,309 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Serum albumin levels	ATXN2	NR	4E-20	NR	313,032 European ancestry individuals, 5,573 African ancestry individuals, 6,687 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Apolipoprotein B levels	ATXN2	NR	4E-12	NR	340,860 European ancestry individuals, 5,962 African ancestry individuals, 7,275 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Total cholesterol levels	ATXN2	NR	1E-33	NR	342,508 European ancestry individuals, 6,014 African ancestry individuals, 7,336 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Apolipoprotein A1 levels	ATXN2	NR	5E-13	NR	311,601 European ancestry individuals, 5,550 African ancestry individuals, 6,682 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Brain shape (segment 1)	ATXN2	NA	1E-9	NR	19,670 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Direct bilirubin levels	ATXN2	NR	2E-40	NR	291,512 European ancestry individuals, 5,007 African ancestry individuals, 6,088 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Glycated hemoglobin levels	ATXN2	NR	4E-31	NR	327,177 European ancestry individuals, 4,847 African ancestry individuals, 6,895 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	High density lipoprotein cholesterol levels	ATXN2	NR	8E-31	NR	313,372 European ancestry individuals, 5,573 African ancestry individuals, 6,689 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Low density lipoprotein cholesterol levels	ATXN2	NR	1E-22	NR	341,875 European ancestry individuals, 6,003 African ancestry individuals, 7,319 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Serum alkaline phosphatase levels	ATXN2	NR	9E-23	NR	342,535 European ancestry individuals, 6,019 African ancestry individuals, 7,337 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Aspartate aminotransferase levels	ATXN2	NR	3E-17	NR	341,246 European ancestry individuals, 5,982 African ancestry individuals, 7,313 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cystatin C levels	ATXN2	NR	3E-174	NR	342,399 European ancestry individuals, 6,015 African ancestry individuals, 7,338 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Total bilirubin levels	ATXN2	NR	1E-56	NR	341,077 European ancestry individuals, 5,978 African ancestry individuals, 7,313 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Serum phosphate levels	ATXN2	NR	1E-27	NR	312,888 European ancestry individuals, 5,568 African ancestry individuals, 6,685 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Non-albumin protein levels	ATXN2	NR	3E-59	NR	313,032 European ancestry individuals, 5,573 African ancestry individuals, 6,687 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Serum total protein levels	ATXN2	NR	8E-18	NR	313,032 European ancestry individuals, 5,573 African ancestry individuals, 6,687 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Urate levels	ATXN2	NR	1E-45	NR	342,087 European ancestry individuals, 6,011 African ancestry individuals, 7,328 South Asian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Right ventricular stroke volume (MTAG)	ATXN2	NA	3E-15	0.48	29,503 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Diastolic blood pressure x depressive symptoms interaction (2df test)	ATXN2	NA	6E-18	NR	14,597 African American individuals, 43,335 European ancestry individuals, 2,592 Asian ancestry individuals, 7,926 Hispanic individuals	NA	NA	NA	NA	NA
+rs653178	Brain morphology (MOSTest)	ATXN2	NA	5E-13	NR	33,735 white British ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Kynurenine levels	ATXN2	NA	1E-45	0.4792	30,899 Caucasian ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Vertex-wise cortical surface area	ATXN2	NA	2E-22	0.47	33,748 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Total Cholesterol in IDL	ATXN2	NA	3E-15	0.5461	4,435 East Asian ancestry individuals, 11,340 South Asian ancestry individuals, 120,241 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Cholesterol esters in IDL	ATXN2	NA	1E-14	0.5461	4,435 East Asian ancestry individuals, 11,340 South Asian ancestry individuals, 120,241 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Diastolic blood pressure (MTAG)	ATXN2	NA	4E-164	NR	at least 757,601 European ancestry individuals (MTAG boosted by 455,258  Alzheimer's disease samples)	NA	NA	NA	NA	NA
+rs653178	B2M protein levels	ATXN2	NA	1E-50	0.51470312	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	CD28 protein levels	ATXN2	NA	6E-50	0.51470312	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	CD300C protein levels	ATXN2	NA	4E-37	0.51470312	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	CD300A protein levels	ATXN2	NA	2E-26	0.51470312	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	CD8A protein levels	ATXN2	NA	2E-24	0.51470312	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	FCRL5 protein levels	ATXN2	NA	1E-20	0.51470312	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	GOLM2 protein levels	ATXN2	NA	1E-14	0.51470312	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	IL2RG protein levels	ATXN2	NA	2E-14	0.51470312	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	PDCD1LG2 protein levels	ATXN2	NA	5E-20	0.51470312	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	LAIR2 protein levels	ATXN2	NA	8E-47	0.51470312	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	PCDH9 protein levels	ATXN2	NA	9E-22	0.51470312	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Neutrophill percentage (UKB data field 30200)	ATXN2	NA	3E-107	0.51729923	394,642 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Lymphocyte percentage (UKB data field 30180)	ATXN2	NA	2E-70	0.51729923	394,642 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Urate levels (UKB data field 30880)	ATXN2	NA	8E-59	0.51729923	394,642 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Eosinophill percentage (UKB data field 30210)	ATXN2	NA	6E-304	0.51729923	394,642 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Body mass index (BMI, mean, inv-normal transformed)	ATXN2	NA	2E-35	0.4915	424,221 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Body mass index (BMI, maximum, inv-normal transformed)	ATXN2	NA	2E-28	0.4915	424,231 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	eosinophil (fraction, maximum, inv-norm transformed)	ATXN2	NA	2E-30	0.3042	47,410 Hispanic or Latin American individuals	NA	NA	NA	NA	NA
+rs653178	Takes medication for high blood pressure?	ATXN2	NA	3E-24	0.4917	179,356 European ancestry cases, 136,312 European ancestry controls	NA	NA	NA	NA	NA
+rs653178	eosinophil (absolute count, maximum, inv-norm transformed)	ATXN2	NA	5E-40	0.306	42,380 Hispanic or Latin American individuals	NA	NA	NA	NA	NA
+rs653178	SIGLEC5 protein levels	ATXN2	NA	2E-31	0.51470312	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	white blood cell count (WBC, maximum, inv-norm transformed)	ATXN2	NA	2E-13	0.3069	49,939 Hispanic or Latin American individuals	NA	NA	NA	NA	NA
+rs653178	total cholesterol (maximum, inv-norm transformed)	ATXN2	NA	5E-33	0.4916	397,478 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Weight (maximum, inv-normal transformed)	ATXN2	NA	2E-32	0.4915	425,541 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Weight (mean, inv-normal transformed)	ATXN2	NA	4E-40	0.4915	425,535 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	hematocrit (minimum, inv-norm transformed)	ATXN2	NA	4E-35	0.4915	407,854 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	low density lipoprotein cholesterol (LDLC, maximum, inv-norm transformed)	ATXN2	NA	7E-26	0.4916	404,687 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	total cholesterol (maximum, inv-norm transformed)	ATXN2	NA	4E-24	0.3876	112,221 African American or Afro-Caribbean individuals, 54,837 Hispanic or Latin American individuals, 6,013 East Asian ancestry individuals, 397,478 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	lymphocyte (absolute count, maximum, inv-norm transformed)	ATXN2	NA	2E-32	0.306	36,516 Hispanic or Latin American individuals	NA	NA	NA	NA	NA
+rs653178	Weight (maximum, inv-normal transformed)	ATXN2	NA	5E-13	0.3881	119,284 African American or Afro-Caribbean individuals, 57,954 Hispanic or Latin American individuals, 6,419 East Asian ancestry individuals, 425,541 European ancestry individuals	NA	NA	NA	NA	NA
+rs653178	Weight (mean, inv-normal transformed)	ATXN2	NA	7E-17	0.3881	119,279 African American or Afro-Caribbean individuals, 57,954 Hispanic or Latin American individuals, 6,419 East Asian ancestry individuals, 425,535 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Crohn's disease	PHTF1 - RSBN1	DCLRE1B, PTPN22	2E-15	0.907	Up to 12,924 European ancestry cases, up to 21,442 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Monokine induced by gamma interferon levels	PHTF1 - RSBN1	NR	9E-7	NR	3,685 Finnish ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Neutrophil count	PHTF1 - RSBN1	PHTF1	3E-25	0.101192	408,112 British individuals	NA	NA	NA	NA	NA
+rs6679677	Juvenile idiopathic arthritis (oligoarticular or rheumatoid factor-negative polyarticular)	PHTF1 - RSBN1	PTPN22	3E-25	0.1	2,816 European ancestry cases, 13,056 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Systemic lupus erythematosus	PHTF1 - RSBN1	PTPN22	1E-15	NR	5,201 European ancestry cases, 9,066 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Pediatric autoimmune diseases	PHTF1 - RSBN1	PTPN22	8E-11	0.09	97 European ancestry thyroiditis cases, 107 European ancestry ankylosing spondylitis cases, 100 European ancestry psoriasis cases, 173 European ancestry celiac disease cases, 254 European ancestry systemic lupus erythematosus cases, 308 European ancestry common variable inmunodeficiency cases, 865 European ancestry ulcerative colitis cases, 1,086 European ancestry Type 1 diabetes cases, 1,123  European ancestry juvenile idiopathic arthritis cases, 1,922  European ancestry Crohn's disease cases, 10,718 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Celiac disease and Rheumatoid arthritis	PHTF1 - RSBN1	RSBN1	1E-53	NR	371 South Asian ancestry celiac disease cases, 3,138 European ancestry celiac disease cases,  4,418 European ancestry rheumatoid arthritis cases,  509 South Asian ancestry celiac disease controls, 2,473 European ancestry celiac disease controls, 3,300 European ancestry rheumatoid arthritis controls, 8,872 celiac disease cases, 9,401 rheumatoid arthritis cases, 4,845 celiac disease controls, 9,627 rheumatoid arthritis controls	NA	NA	NA	NA	NA
+rs6679677	Antineutrophil cytoplasmic antibody-associated vasculitis	PHTF1 - RSBN1	PTPN22	2E-8	0.09	1,015 European ancestry granulomatosis with polyangiitis cases, 206 European ancestry microscopic polyangiitis cases, 3,258 European ancestry controls.	NA	NA	NA	NA	NA
+rs6679677	Systemic lupus erythematosus	PHTF1 - RSBN1	PTPN22	2E-23	NR	6,748 European ancestry cases, 11,516 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Rheumatoid arthritis	PHTF1 - RSBN1	PTPN22	6E-25	0.10	1,860 European ancestry cases, 2,938 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Type 1 diabetes	PHTF1 - RSBN1	PTPN22	5E-26	0.10	1,963 European ancestry cases, 2,938 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Type 1 diabetes	PHTF1 - RSBN1	PTPN22	1E-40	NR	3,561 European ancestry cases, 4,646 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Type 1 diabetes	PHTF1 - RSBN1	PHTF1, PTPN22	8E-24	0.10	2,000 European ancestry cases, 3,000 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Hypothyroidism	PHTF1 - RSBN1	PHTF1, RSBN1, PTPN22	3E-13	0.091	3,736 European ancestry cases, 35,546 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Rheumatoid arthritis	PHTF1 - RSBN1	PTPN22	6E-42	0.10	3,393 European ancestry cases, 12,460 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Rheumatoid arthritis	PHTF1 - RSBN1	NA	1E-145	NR	14,361 European ancestry cases, 43,923 European ancestry controls, 8,267 East Asian ancestry cases, 244,741 East Asian ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Basal cell carcinoma	PHTF1 - RSBN1	NA	5E-13	NR	49,905 European ancestry cases, 752,392 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Ulcerative colitis vs rheumatoid arthritis (ordinary least squares (OLS))	PHTF1 - RSBN1	NA	5E-34	NR	6,968 cases, 8,875 controls	NA	NA	NA	NA	NA
+rs6679677	CXCL9 protein levels	PHTF1 - RSBN1	NA	2E-8	0.133179999999999	39,244 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Keratinocyte cancer (MTAG)	PHTF1 - RSBN1	PHTF1	7E-11	0.897934	at least 18,538 European ancestry cases, at least 340,302 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Giant cell arteritis	PHTF1 - RSBN1	PTPN22	1E-6	0.095	1,651 European ancestry cases, 15,306 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Systemic seropositive rheumatic diseases (Systemic sclerosis or systemic lupus erythematosus or rheumatoid arthritis or idiopathic inflammatory myopathies)	PHTF1 - RSBN1	PHTF1-RSBN1	2E-28	NR	up to 4,595 European ancestry rheumatoid arthritis cases, up to 3,154 European ancestry systemic lupus erythematosus cases, up to 2,281 European ancestry systemic sclerosis cases, up to 1,674 European ancestry idiopathic inflammatory myopathy cases, 19,704 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	DXA-Bone mineral density (total body) (UKB data field 23236)	PHTF1 - RSBN1	NA	3E-8	0.09651	31,986 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	DXA-Bone mineral density (trunk) (UKB data field 23241)	PHTF1 - RSBN1	NA	4E-8	0.09651	up to 31,986 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	DXA-Bone mineral density (femur total) (UKB data field 23291)	PHTF1 - RSBN1	NA	1E-10	0.09651	31,873 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	DXA-Bone mineral density (femur neck) (UKB data field 23299)	PHTF1 - RSBN1	NA	3E-9	0.09651	32,017 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	DXA-Bone mineral density (pelvis) (UKB data field 23232)	PHTF1 - RSBN1	NA	5E-9	0.09651	31,873 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Type 1 diabetes autoantibodies in high risk HLA genotype individuals (time to event)	PHTF1 - RSBN1	PTPN22	2E-6	0.114	5,806 European ancestry children	NA	NA	NA	NA	NA
+rs6679677	Type 1 diabetes autoantibodies in high risk HLA genotype individuals (time to event)	PHTF1 - RSBN1	PTPN22	2E-6	0.114	5,806 European ancestry children	NA	NA	NA	NA	NA
+rs6679677	Basophil percentage of white cells	PHTF1 - RSBN1	PHTF1	2E-16	0.101227	408,112 British individuals	NA	NA	NA	NA	NA
+rs6679677	Type 1 diabetes	PHTF1 - RSBN1	NA	1E-22	NR	409 African American or Afro-Caribbean cases, 482 African American or Afro-Caribbean controls, 153 Hispanic or Latin American cases, 155 Hispanic or Latin American controls, 3,428 European ancestry cases, 3,428 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Age of onset of type 1 diabetes	PHTF1 - RSBN1	NA	4E-11	NR	409 African American or Afro-Caribbean cases, 482 African American or Afro-Caribbean controls, 153 Hispanic or Latin American cases, 155 Hispanic or Latin American controls, 3,420 European ancestry cases, 3,420 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Type 1 diabetes	PHTF1 - RSBN1	NA	1E-21	NR	3,428 European ancestry cases, 3,428 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Serum alkaline phosphatase levels	PHTF1 - RSBN1	NA	3E-15	NR	344,292 European ancestry individuals, 118,886 East Asian ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Rheumatoid arthritis (rheumatoid factor and/or anti-cyclic citrullinated peptide seropositive)	PHTF1 - RSBN1	NA	4E-161	0.12	14,551 European ancestry cases, 846,260 European ancestry controls, 3,468 cases, 145,344 controls	NA	NA	NA	NA	NA
+rs6679677	Rheumatoid arthritis	PHTF1 - RSBN1	NA	4E-144	0.12	26,612 European ancestry cases, 869,454 European ancestry controls, 4,701 cases, 125,923 controls	NA	NA	NA	NA	NA
+rs6679677	Cystatin C levels in bottom 99% of individuals by creatinine levels	PHTF1 - RSBN1	NA	6E-9	NR	417,815 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Rheumatoid arthritis or inflammatory bowel disease	PHTF1 - RSBN1	NA	7E-20	NR	5,082 European ancestry rheumatoid arthritis cases, 3,878 European ancestry inflammatory bowel disease cases, at least 447,182 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Rheumatoid arthritis or multiple sclerosis	PHTF1 - RSBN1	NA	2E-19	NR	5,082 European ancestry rheumatoid arthritis cases, 1,406 European ancestry multiple sclerosis cases, at least 447,182 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Hypothyroidism	PHTF1 - RSBN1	NA	1E-300	0.118	98,805 European ancestry cases, 948,186 European ancestry controls, 14,588 cases, 117,082 controls	NA	NA	NA	NA	NA
+rs6679677	Asthma	PHTF1 - RSBN1	NA	2E-8	0.146	71,481 European ancestry cases, 685,602 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Asthma or chronic rhinosinusitis	PHTF1 - RSBN1	NA	2E-9	NR	88,965 European ancestry cases, 685,602 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Idiopathic inflammatory myopathy	PHTF1 - RSBN1	NA	2E-7	NR	2,565 European ancestry cases, 10,260 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Basal cell carcinoma	PHTF1 - RSBN1	NA	7E-13	NR	49,905 European ancestry cases, 752,392 European ancestry controls, 626 Hispanic or Latin American cases, 9,842 Hispanic or Latin American controls	NA	NA	NA	NA	NA
+rs6679677	Rheumatoid arthritis (MTAG)	PHTF1 - RSBN1	NA	2E-92	0.102	81,247 European ancestry individuals (MTAG effective sample size boosted by osteoarthritis, endometriosis and multiple sclerosis samples)	NA	NA	NA	NA	NA
+rs6679677	Annual healthcare cost	PHTF1 - RSBN1	NA	7E-13	0.146586	373,160 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Platelet-to-lymphocyte ratio	PHTF1 - RSBN1	NA	5E-31	0.898	234,552 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Monocyte count	PHTF1 - RSBN1	NA	4E-8	0.898	234,690 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Neutrophil count	PHTF1 - RSBN1	NA	3E-16	0.898	234,802 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Lymphocyte count	PHTF1 - RSBN1	NA	7E-35	0.898	234,778 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Rheumatoid arthritis	PHTF1 - RSBN1	NA	1E-15	NR	6,754 European ancestry cases, 452,384 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Basal cell carcinoma (MTAG)	PHTF1 - RSBN1	NA	2E-68	NR	20,791 European ancestry cases, 286,893 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Medication use (immunosuppressants)	PHTF1 - RSBN1	RSBN1	3E-19	0.102915	3,954 European ancestry cases, 268,648 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Non-melanoma skin cancer	PHTF1 - RSBN1	NA	3E-10	NR	18,944 White British ancestry cases, 255,886 White British ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Arthritis (juvenile idiopathic)	PHTF1 - RSBN1	RSBN, PTPN22	7E-30	NR	3,305 European ancestry cases, 9,196 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Arthritis (juvenile idiopathic)	PHTF1 - RSBN1	NA	2E-6	NR	1,245 European ancestry cases, 9,250 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Medication use (immunosuppressants)	PHTF1 - RSBN1	NA	3E-19	NR	3,954 European ancestry cases, 268,648 European ancestry controls, 3,483 East Asian ancestry cases, 175,243 East Asian ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Insulin-dependent diabetes mellitus	PHTF1 - RSBN1	NA	8E-19	NR	3,329 European ancestry cases, 373,542 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Hyperthyroidism	PHTF1 - RSBN1	NA	6E-17	0.10237795	394,626 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	JCHAIN protein levels	PHTF1 - RSBN1	NA	9E-12	0.1005446	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Alkaline phosphatase (UKB data field 30610)	PHTF1 - RSBN1	NA	4E-13	0.10237634	394,642 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	monocyte (fraction, mean, inv-norm transformed)	PHTF1 - RSBN1	NA	1E-11	0.9049	296,975 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Basophil (fraction, mean, inv-norm transformed)	PHTF1 - RSBN1	NA	2E-11	0.9274	67,485 African American or Afro-Caribbean individuals, 36,872 Hispanic or Latin American individuals, 4,010 East Asian ancestry individuals, 221,657 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	monocyte (fraction, maximum, inv-norm transformed)	PHTF1 - RSBN1	NA	4E-13	0.9049	296,975 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	lymphocyte (absolute count, minimum, inv-norm transformed)	PHTF1 - RSBN1	NA	3E-18	0.9255	70,597 African American or Afro-Caribbean individuals, 36,547 Hispanic or Latin American individuals, 3,839 East Asian ancestry individuals, 253,480 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	lymphocyte (absolute count, maximum, inv-norm transformed)	PHTF1 - RSBN1	NA	2E-14	0.9255	70,548 African American or Afro-Caribbean individuals, 36,516 Hispanic or Latin American individuals, 3,839 East Asian ancestry individuals, 253,142 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	lymphocyte (absolute count, mean, inv-norm transformed)	PHTF1 - RSBN1	NA	3E-19	0.9255	70,580 African American or Afro-Caribbean individuals, 36,536 Hispanic or Latin American individuals, 3,839 East Asian ancestry individuals, 253,317 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Type 1 diabetes with ophthalmic manifestations (PheCode 250.13)	PHTF1 - RSBN1	NA	8E-17	0.9042	2,517 European ancestry cases, 445,450 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Type 1 diabetes (PheCode 250.1)	PHTF1 - RSBN1	NA	3E-13	0.9041	16,971 European ancestry cases, 418,767 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Type 1 diabetes with ketoacidosis (PheCode 250.11)	PHTF1 - RSBN1	NA	3E-13	0.9042	530 European ancestry cases, 450,407 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Takes medication for Thyroid problems?	PHTF1 - RSBN1	NA	6E-63	0.904	26,295 European ancestry cases, 289,373 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Thyroid problems	PHTF1 - RSBN1	NA	5E-65	0.904	33,335 European ancestry cases, 282,333 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Vitiligo (PheCode 694.1)	PHTF1 - RSBN1	NA	6E-14	0.9042	1,263 European ancestry cases, 449,492 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Actinic keratosis (PheCode 702.1)	PHTF1 - RSBN1	NA	3E-12	0.9041	97,501 European ancestry cases, 314,618 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Skin cancer	PHTF1 - RSBN1	NA	3E-26	0.9041	83,801 European ancestry cases, 347,397 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	neutrophil (absolute count, mean, inv-norm transformed)	PHTF1 - RSBN1	NA	9E-18	0.9042	275,053 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Thyroid problems	PHTF1 - RSBN1	NA	6E-58	0.9189	3,597 African American or Afro-Caribbean cases, 51,908 African American or Afro-Caribbean controls, 2,618 Hispanic or Latin American cases, 26,696 Hispanic or Latin American controls, 271 East Asian ancestry cases, 3,276 East Asian ancestry controls, 33,335 European ancestry cases, 282,333 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Hypothyroidism NOS (PheCode 244.4)	PHTF1 - RSBN1	NA	6E-121	0.9042	60,573 European ancestry cases, 380,701 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Hypothyroidism (PheCode 244)	PHTF1 - RSBN1	NA	1E-121	0.9042	62,814 European ancestry cases, 378,321 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Type 1 diabetes (PheCode 250.1)	PHTF1 - RSBN1	NA	5E-12	0.9241	6,451 African American or Afro-Caribbean cases, 109,410 African American or Afro-Caribbean controls, 16,971 European ancestry cases, 418,767 European ancestry controls, 2,295 Hispanic or Latin American cases, 55,134 Hispanic or Latin American controls	NA	NA	NA	NA	NA
+rs6679677	Type 1 diabetes with ketoacidosis (PheCode 250.11)	PHTF1 - RSBN1	NA	6E-15	0.9213	215 African American or Afro-Caribbean cases, 121,380 African American or Afro-Caribbean controls, 530 European ancestry cases, 450,407 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Type 1 diabetes with ophthalmic manifestations (PheCode 250.13)	PHTF1 - RSBN1	NA	2E-18	0.9243	738 African American or Afro-Caribbean cases, 119,755 African American or Afro-Caribbean controls, 2,517 European ancestry cases, 445,450 European ancestry controls, 314 Hispanic or Latin American cases, 59,045 Hispanic or Latin American controls	NA	NA	NA	NA	NA
+rs6679677	Hypothyroidism (PheCode 244)	PHTF1 - RSBN1	NA	9E-85	0.9244	7,603 African American or Afro-Caribbean cases, 112,167 African American or Afro-Caribbean controls, 6,082 Hispanic or Latin American cases, 52,666 Hispanic or Latin American controls, 398 East Asian ancestry cases, 6,360 East Asian ancestry controls, 62,814 European ancestry cases, 378,321 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	Skin cancer	PHTF1 - RSBN1	NA	7E-15	0.9248	939 African American or Afro-Caribbean cases, 119,688 African American or Afro-Caribbean controls, 83,801 European ancestry cases, 347,397 European ancestry controls, 2,247 Hispanic or Latin American cases, 56,654 Hispanic or Latin American controls	NA	NA	NA	NA	NA
+rs6679677	white blood cell count (WBC, maximum, inv-norm transformed)	PHTF1 - RSBN1	NA	3E-17	0.9046	380,686 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	white blood cell count (WBC, mean, inv-norm transformed)	PHTF1 - RSBN1	NA	9E-48	0.9046	381,099 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	white blood cell count (WBC, minimum, inv-norm transformed)	PHTF1 - RSBN1	NA	3E-48	0.9046	381,267 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Other non-epithelial cancer of skin (PheCode 172.2)	PHTF1 - RSBN1	NA	6E-16	0.9249	709 African American or Afro-Caribbean cases, 120,241 African American or Afro-Caribbean controls, 68,143 European ancestry cases, 360,898 European ancestry controls, 1,847 Hispanic or Latin American cases, 57,159 Hispanic or Latin American controls	NA	NA	NA	NA	NA
+rs6679677	lymphocyte (absolute count, minimum, inv-norm transformed)	PHTF1 - RSBN1	NA	9E-26	0.905	253,480 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	lymphocyte (absolute count, mean, inv-norm transformed)	PHTF1 - RSBN1	NA	4E-34	0.905	253,317 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Degenerative skin conditions and other dermatoses (PheCode 702)	PHTF1 - RSBN1	NA	2E-11	0.9253	3,642 African American or Afro-Caribbean cases, 111,726 African American or Afro-Caribbean controls, 5,848 Hispanic or Latin American cases, 48,746 Hispanic or Latin American controls, 410 East Asian ancestry cases, 5,962 East Asian ancestry controls, 133,983 European ancestry cases, 263,761 European ancestry controls	NA	NA	NA	NA	NA
+rs6679677	lymphocyte (absolute count, maximum, inv-norm transformed)	PHTF1 - RSBN1	NA	3E-26	0.905	253,142 European ancestry individuals	NA	NA	NA	NA	NA
+rs6679677	Vitiligo (PheCode 694.1)	PHTF1 - RSBN1	NA	2E-14	0.9244	645 African American or Afro-Caribbean cases, 120,867 African American or Afro-Caribbean controls, 1,263 European ancestry cases, 449,492 European ancestry controls, 368 Hispanic or Latin American cases, 59,392 Hispanic or Latin American controls	NA	NA	NA	NA	NA
+rs6679677	white blood cell count (WBC, mean, inv-norm transformed)	PHTF1 - RSBN1	NA	1E-15	0.9251	108,896 African American or Afro-Caribbean individuals, 49,978 Hispanic or Latin American individuals, 5,839 East Asian ancestry individuals, 381,099 European ancestry individuals	NA	NA	NA	NA	NA
+rs6897932	Primary biliary cholangitis	IL7R	IL7R	6E-9	0.195130086724483	1,381 Japanese ancestry cases, 1,505 Japanese ancestry controls	IL7R	Benign	reviewed by expert panel	13	not specified|Immunodeficiency 104|not provided
+rs6897932	Multiple sclerosis	IL7R	IL7RA	3E-7	0.75	931 European ancestry trios, 2,431 European ancestry controls	IL7R	Benign	reviewed by expert panel	13	not specified|Immunodeficiency 104|not provided
+rs6897932	Type 1 diabetes	IL7R	IL7R	8E-6	0.71	2,000 European ancestry cases, 3,000 European ancestry controls	IL7R	Benign	reviewed by expert panel	13	not specified|Immunodeficiency 104|not provided
+rs6897932	Multiple sclerosis	IL7R	IL7R	2E-8	NR	9,772 European ancestry cases, 16,849 European ancestry controls	IL7R	Benign	reviewed by expert panel	13	not specified|Immunodeficiency 104|not provided
+rs6897932	Multiple sclerosis	IL7R	IL7R	2E-6	0.75	2,624 European ancestry cases, 7,220 European ancestry controls	IL7R	Benign	reviewed by expert panel	13	not specified|Immunodeficiency 104|not provided
+rs6897932	ICAM2/IL7R protein level ratio	IL7R	NA	3E-3651	NR	43,509 European ancestry individuals	IL7R	Benign	reviewed by expert panel	13	not specified|Immunodeficiency 104|not provided
+rs6897932	IL7RA protein level (protein group normalized intensity)	IL7R	NA	3E-39	0.226984	1,252 European, Hispanic or African ancestry individuals	IL7R	Benign	reviewed by expert panel	13	not specified|Immunodeficiency 104|not provided
+rs6897932	Asthma	IL7R	NA	5E-13	NR	37,227 European ancestry cases, 124,132 European ancestry controls	IL7R	Benign	reviewed by expert panel	13	not specified|Immunodeficiency 104|not provided
+rs6897932	Systemic lupus erythematosus (MTAG)	IL7R	NA	2E-14	NR	at least 5,877 East Asian ancestry cases, at least 188,588 East Asian ancestry controls, at least 14,355 European ancestry cases, at least 505,956 European ancestry controls, at least 1,393 admixed American ancestry cases, at least 2,327 admixed American ancestry controls (MTAG boosted by autoimmune diseases samples)	IL7R	Benign	reviewed by expert panel	13	not specified|Immunodeficiency 104|not provided
+rs705699	Allergic disease (asthma, hay fever and/or eczema) (multivariate analysis)	RAB5B	RAB5B	6E-9	0.432	477,968 European ancestry individuals	NA	NA	NA	NA	NA
+rs705699	Allergic disease (asthma, hay fever and/or eczema) (age of onset)	RAB5B	RAB5B	4E-9	0.432	117,130 European ancestry individuals	NA	NA	NA	NA	NA
+rs705699	Aspartate aminotransferase levels	RAB5B	RAB5B	8E-11	0.58	389,565 European ancestry individuals	NA	NA	NA	NA	NA
+rs705699	Sum eosinophil basophil counts	RAB5B	RAB5B	5E-12	0.4215	171,771 European ancestry individuals	NA	NA	NA	NA	NA
+rs705699	Type 1 diabetes	RAB5B	SUOX	7E-20	0.26	1,005 Han Chinese ancestry cases, 1,257 Han Chinese ancestry controls	NA	NA	NA	NA	NA
+rs705699	Asthma (childhood onset)	RAB5B	NR	9E-17	NR	13,435 European ancestry cases, 393,186 European ancestry controls	NA	NA	NA	NA	NA
+rs705699	Atopic asthma	RAB5B	NR	4E-16	NR	23,982 European ancestry cases, 393,169 European ancestry controls	NA	NA	NA	NA	NA
+rs705699	Atopic dermatitis	RAB5B	NA	9E-27	0.4	60,653 European ancestry cases, 804,329 European ancestry controls	NA	NA	NA	NA	NA
+rs705699	Symbol digit substitution test performance (baseline)	RAB5B	NA	7E-10	0.573237	181,587 European ancestry individuals	NA	NA	NA	NA	NA
+rs705699	Asthma (childhood onset)	RAB5B	RAB5B, CDK2, SUOX	1E-11	0.425	9,433 British ancestry cases, 318,237 British ancestry controls	NA	NA	NA	NA	NA
+rs705699	Asthma (adult onset)	RAB5B	RAB5B, CDK2, SUOX	6E-7	0.425	21,564 British ancestry cases, 318,237 British ancestry controls	NA	NA	NA	NA	NA
+rs705699	Aspartate aminotransferase levels (UKB data field 30650)	RAB5B	NA	3E-17	0.4244143	394,642 European ancestry individuals	NA	NA	NA	NA	NA
+rs705704	Body mass index	RPS26	NA	6E-15	0.3241	374,756 European ancestry male individuals	RPS26	Benign	criteria provided, multiple submitters, no conflicts	2	not provided
+rs705704	Asthma	RPS26	NA	7E-10	0.186381674	8,216 Japanese ancestry cases, 201,592 Japanese ancestry controls	RPS26	Benign	criteria provided, multiple submitters, no conflicts	2	not provided
+rs705704	Nonsyndromic cleft lip with cleft palate	RPS26	RPS26	1E-9	0.23	2,033 Han Chinese ancestry cases, 4,051 Han Chinese ancestry controls	RPS26	Benign	criteria provided, multiple submitters, no conflicts	2	not provided
+rs705704	Metabolic syndrome	RPS26	NA	2E-16	NR	1,384,348 European ancestry individuals	RPS26	Benign	criteria provided, multiple submitters, no conflicts	2	not provided
+rs705704	Forced expiratory volume in 1 second (FEV1)	RPS26	NA	2E-17	NR	587,666 African American or Afro-Caribbean, East Asian, European, Hispanic or Latin American or South Asian ancestry individuals	RPS26	Benign	criteria provided, multiple submitters, no conflicts	2	not provided
+rs705704	Type 1 diabetes	RPS26	NA	2E-37	0.3434	15,573 European ancestry cases, 158,408 European ancestry controls	RPS26	Benign	criteria provided, multiple submitters, no conflicts	2	not provided
+rs705704	Medication use (thyroid preparations)	RPS26	NA	9E-16	NR	24,832 European ancestry cases, 280,750 European ancestry controls, 3,103 East Asian ancestry cases, 175,623 East Asian ancestry controls	RPS26	Benign	criteria provided, multiple submitters, no conflicts	2	not provided
+rs7302200	Nasal polyps	RPS26 - ERBB3	intergenic	9E-7	0.663	86 European ancestry whole-genome sequenced cases, 4,280 European ancestry cases, 13,941 European ancestry whole-genome sequenced controls, 700,740 European ancestry controls	NA	NA	NA	NA	NA
+rs7302200	Cognitive ability, years of educational attainment or schizophrenia (pleiotropy)	RPS26 - ERBB3	RPS26	1E-14	NR	328,917 individuals with educational attainment measurements, 107,207 individuals with cognitive ability measurements, 77,096 European ancestry schizophrenia cases, 43,456 European ancestry controls	NA	NA	NA	NA	NA
+rs7302200	Eosinophil count	RPS26 - ERBB3	intergenic	3E-13	0.3411	172,275 European ancestry individuals	NA	NA	NA	NA	NA
+rs7302200	Asthma (adult onset)	RPS26 - ERBB3	RPS26, ERBB3	4E-15	NR	26,582 European ancestry cases, 300,671 European ancestry controls	NA	NA	NA	NA	NA
+rs7302200	Asthma	RPS26 - ERBB3	RPS26, ERBB3	8E-25	NR	40,544 European ancestry cases, 300,671 European ancestry controls	NA	NA	NA	NA	NA
+rs7302200	Type 1 diabetes	RPS26 - ERBB3	NA	4E-12	NR	3,428 European ancestry cases, 3,428 European ancestry controls	NA	NA	NA	NA	NA
+rs7302200	Type 1 diabetes	RPS26 - ERBB3	NA	8E-13	NR	409 African American or Afro-Caribbean cases, 482 African American or Afro-Caribbean controls, 153 Hispanic or Latin American cases, 155 Hispanic or Latin American controls, 3,428 European ancestry cases, 3,428 European ancestry controls	NA	NA	NA	NA	NA
+rs7302200	Eosinophil count	RPS26 - ERBB3	NA	1E-11	0.245	365,954 British ancestry individuals	NA	NA	NA	NA	NA
+rs7302200	Age of onset of adult onset asthma	RPS26 - ERBB3	NA	4E-14	NR	56,744 European ancestry cases, 674,014 European ancestry controls	NA	NA	NA	NA	NA
+rs7302200	Smoking initiation	RPS26 - ERBB3	NA	4E-23	0.328	2,669,029 European ancestry individuals	NA	NA	NA	NA	NA
+rs7302200	Opioid addiction	RPS26 - ERBB3	NA	2E-6	NR	7,281 European ancestry cases, 297,550 European ancestry controls, 3,856 African American cases, 12,203 African American controls	NA	NA	NA	NA	NA
+rs7302200	Medication use (thyroid preparations)	RPS26 - ERBB3	RPS26	1E-14	0.340319	24,832 European ancestry cases, 280,750 European ancestry controls	NA	NA	NA	NA	NA
+rs78037977	Vitiligo	FASLG - SLC25A38P1	FASLG	7E-17	0.1316	2,853 European ancestry cases and 37,405 European ancestry controls	NA	NA	NA	NA	NA
+rs78037977	Itch intensity from mosquito bite	FASLG - SLC25A38P1	FASLG, TNFSF18	4E-8	0.123	84,724 European ancestry individuals	NA	NA	NA	NA	NA
+rs78037977	Mosquito bite size	FASLG - SLC25A38P1	Intergenic	1E-6	NR	84,724 European ancestry individuals	NA	NA	NA	NA	NA
+rs78037977	Allergic disease (asthma, hay fever and/or eczema) (age of onset)	FASLG - SLC25A38P1	FASLG, TNFSF18	1E-11	0.879	117,130 European ancestry individuals	NA	NA	NA	NA	NA
+rs78037977	Allergic disease (asthma, hay fever and/or eczema) (multivariate analysis)	FASLG - SLC25A38P1	FASLG, TNFSF18	2E-12	0.879	477,968 European ancestry individuals	NA	NA	NA	NA	NA
+rs78037977	Asthma (childhood onset)	FASLG - SLC25A38P1	FASLG, TNFSF18	6E-13	NR	13,962 European ancestry cases, 300,671 European ancestry controls	NA	NA	NA	NA	NA
+rs78037977	Asthma onset (childhood vs adult)	FASLG - SLC25A38P1	FASLG, TNFSF18	5E-6	0.879	13,962 European ancestry childhood onset cases, 14,873 European ancestry adult onset cases	NA	NA	NA	NA	NA
+rs78037977	Allergic sensitization	FASLG - SLC25A38P1	FASLG	9E-10	0.87	8,040 European ancestry cases, 16,441 European ancestry controls	NA	NA	NA	NA	NA
+rs78037977	Asthma (childhood onset)	FASLG - SLC25A38P1	NR	1E-9	NR	13,435 European ancestry cases, 393,186 European ancestry controls	NA	NA	NA	NA	NA
+rs78037977	Type 1 diabetes	FASLG - SLC25A38P1	FASLG	2E-9	0.124	20,065 European ancestry cases, 33,065 European ancestry controls, 1,045 other-admixed ancestry cases, 1,103 other-admixed ancestry controls, 1,043 African ancestry cases, 3,206 African ancestry controls	NA	NA	NA	NA	NA
+rs78037977	Type 1 diabetes	FASLG - SLC25A38P1	FASLG	2E-9	0.124	20,065 European ancestry cases, 33,065 European ancestry controls, 1,045 other-admixed ancestry cases, 1,103 other-admixed ancestry controls, 1,043 African ancestry cases, 3,206 African ancestry controls	NA	NA	NA	NA	NA
+rs78037977	TP53BP1 protein levels	FASLG - SLC25A38P1	NA	5E-14	0.1243024	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs78037977	TNFRSF4 protein levels	FASLG - SLC25A38P1	NA	2E-13	0.1243024	47,745 European ancestry individuals	NA	NA	NA	NA	NA
+rs911263	Rheumatoid arthritis (ACPA-positive)	RAD51B	RAD51B	3E-8	0.72	2,234 Korean ancestry cases, 7,065 Korean ancestry controls, 10,288 European ancestry cases, 35,502 European ancestry controls	NA	NA	NA	NA	NA
+rs911263	Asthma	RAD51B	RAD51B	5E-20	0.29	84,492 European ancestry cases, 2,149 African American cases, 606 Hispanic cases, 1,239 Japanese ancestry cases, 437,036 European ancestry controls, 6,055 African American controls, 792 Hispanic controls, 3,976 Japanese ancestry controls	NA	NA	NA	NA	NA
+rs911263	Primary biliary cirrhosis	RAD51B	RAD51B	1E-10	0.71	2,861 British and Irish ancestry cases, 8,514 British and Irish ancestry controls	NA	NA	NA	NA	NA
+rs911263	Primary biliary cholangitis	RAD51B	RAD51L1, RAD51B	2E-9	0.73	2,764 European ancestry cases, 10,475 European ancestry controls	NA	NA	NA	NA	NA
+rs911263	Systemic lupus erythematosus	RAD51B	RAD51B	3E-8	NR	6,748 European ancestry cases, 11,516 European ancestry controls, 2,970 African American cases, 2,452 African American controls, 1,872 Hispanic cases, 2,016 Hispanic controls	NA	NA	NA	NA	NA
+rs911263	Primary biliary cholangitis	RAD51B	RAD51L1	2E-11	0.71	1,840 European ancestry cases, 5,163 European ancestry controls and (Liu et al)	NA	NA	NA	NA	NA
+rs911263	Rheumatoid arthritis (ACPA-positive)	RAD51B	ACTN1	2E-6	NR	up to 9,585 European ancestry cases, up to 33,742 European ancestry controls	NA	NA	NA	NA	NA
+rs911263	Primary biliary cirrhosis	RAD51B	NR	4E-6	NR	2,216 European ancestry cases, 5,594 Europen ancestry controls	NA	NA	NA	NA	NA
+rs911263	Type 1 diabetes	RAD51B	RAD51B	3E-8	0.71	20,065 European ancestry cases, 33,065 European ancestry controls, 1,045 other-admixed ancestry cases, 1,103 other-admixed ancestry controls, 1,043 African ancestry cases, 3,206 African ancestry controls	NA	NA	NA	NA	NA
+rs911263	Type 1 diabetes	RAD51B	RAD51B	3E-8	0.71	20,065 European ancestry cases, 33,065 European ancestry controls, 1,045 other-admixed ancestry cases, 1,103 other-admixed ancestry controls, 1,043 African ancestry cases, 3,206 African ancestry controls	NA	NA	NA	NA	NA
+rs9271365	Nonatopic asthma	HLA-DRB1 - HLA-DQA1	NR	7E-35	NR	28,862 European ancestry cases, 422,048 European ancestry controls	NA	NA	NA	NA	NA
+rs9271365	Type 1 diabetes	HLA-DRB1 - HLA-DQA1	NA	9E-369	NR	409 African American or Afro-Caribbean cases, 482 African American or Afro-Caribbean controls, 153 Hispanic or Latin American cases, 155 Hispanic or Latin American controls, 3,428 European ancestry cases, 3,428 European ancestry controls	NA	NA	NA	NA	NA
+rs9271365	Type 1 diabetes	HLA-DRB1 - HLA-DQA1	NA	1E-37	NR	409 African American or Afro-Caribbean cases, 482 African American or Afro-Caribbean controls	NA	NA	NA	NA	NA
+rs9271365	Type 1 diabetes	HLA-DRB1 - HLA-DQA1	NA	2E-18	NR	153 Hispanic or Latin American cases, 155 Hispanic or Latin American controls	NA	NA	NA	NA	NA
+rs9271365	Type 1 diabetes	HLA-DRB1 - HLA-DQA1	NA	8E-317	NR	3,428 European ancestry cases, 3,428 European ancestry controls	NA	NA	NA	NA	NA
+rs9271365	Colorectal cancer vs inflammatory bowel disease	HLA-DRB1 - HLA-DQA1	NA	2E-6	0.353	835 Basque ancestry cases, 492 Basque ancestry controls	NA	NA	NA	NA	NA
+rs9271365	Monounsaturated fatty acid levels	HLA-DRB1 - HLA-DQA1	NA	8E-17	NR	239,268 European ancestry individuals	NA	NA	NA	NA	NA
+rs9271365	Polyunsaturated fatty acids to monounsaturated fatty acids ratio	HLA-DRB1 - HLA-DQA1	NA	2E-9	NR	239,268 European ancestry individuals	NA	NA	NA	NA	NA
+rs9271365	Monounsaturated fatty acid levels	HLA-DRB1 - HLA-DQA1	NA	4E-9	NR	110,346 European ancestry males	NA	NA	NA	NA	NA
+rs9271365	Hashimoto thyroiditis	HLA-DRB1 - HLA-DQA1	NA	1E-39	NR	15,654 European ancestry cases, 379,986 European ancestry controls, 537 East Asian ancestry cases, 172,656 East Asian ancestry controls	NA	NA	NA	NA	NA
+rs9271365	Hypothyroidism	HLA-DRB1 - HLA-DQA1	NA	5E-123	NR	30,155 European ancestry cases, 379,986 European ancestry controls, 1,114 East Asian ancestry cases, 172,656 East Asian ancestry controls	NA	NA	NA	NA	NA
+rs9271365	Asthma in gastrointestinal disease	HLA-DRB1 - HLA-DQA1	NA	4E-15	0.431	44,383 European ancestry cases, 260,715 European ancestry controls	NA	NA	NA	NA	NA
+rs9271365	Asthma in muscoskeletal disease	HLA-DRB1 - HLA-DQA1	NA	3E-9	0.431	44,383 European ancestry cases, 260,715 European ancestry controls	NA	NA	NA	NA	NA
+rs9271365	Asthma in cardiovascular disease	HLA-DRB1 - HLA-DQA1	NA	2E-14	0.431	44,383 European ancestry cases, 260,715 European ancestry controls	NA	NA	NA	NA	NA
+rs9271365	Asthma in any disease	HLA-DRB1 - HLA-DQA1	NA	7E-80	0.431	44,383 European ancestry cases, 260,715 European ancestry controls	NA	NA	NA	NA	NA
+rs9272346	Asthma	HLA-DQA1	HLA-DQA1	2E-156	0.61	84,492 European ancestry cases, 2,149 African American cases, 606 Hispanic cases, 1,239 Japanese ancestry cases, 437,036 European ancestry controls, 6,055 African American controls, 792 Hispanic controls, 3,976 Japanese ancestry controls	NA	NA	NA	NA	NA
+rs9272346	Type 1 diabetes	HLA-DQA1	MHC	5E-134	0.61	1,963 European ancestry cases, 2,938 European ancestry controls	NA	NA	NA	NA	NA
+rs9272346	Type 1 diabetes	HLA-DQA1	HLA	6E-129	NR	3,561 European ancestry cases, 4,646 European ancestry controls	NA	NA	NA	NA	NA
+rs9272346	Asthma	HLA-DQA1	HLA-DRB1, HLA-DQA1	6E-24	0.56	19,954 European ancestry cases, 107,715 European ancestry controls, 2,149 African ancestry cases, 6,055 African ancestry controls, 1,239 Japanese ancestry cases, 3,976 Japanese ancestry controls, 606 Latino cases, 792 Latino controls	NA	NA	NA	NA	NA
+rs9272346	Asthma	HLA-DQA1	HLA-DRB1, HLA-DQA1	2E-28	0.56	19,954 European ancestry cases, 107,715 European ancestry controls	NA	NA	NA	NA	NA
+rs9272346	Asthma	HLA-DQA1	HLA-DQA1	2E-8	NR	Up to 1,238 European ancestry cases, up to 2,617 European ancestry controls	NA	NA	NA	NA	NA
+rs9272346	Asthma (time to onset)	HLA-DQA1	HLA-DQA1	2E-8	0.59	5,462 European ancestry cases, 8,424 European ancestry controls	NA	NA	NA	NA	NA
+rs9272346	Asthma (age of onset)	HLA-DQA1	NR	7E-8	0.59	37,846 British ancestry individuals	NA	NA	NA	NA	NA
+rs9272346	Asthma (childhood onset)	HLA-DQA1	NR	4E-37	0.59	9,433 British ancestry cases, 318,237 British ancestry controls	NA	NA	NA	NA	NA
+rs9272346	Asthma (adult onset)	HLA-DQA1	NR	2E-47	0.59	21,564 British ancestry cases, 318,237 British ancestry controls	NA	NA	NA	NA	NA
+rs9356171	Diisocyanate-induced asthma	RN7SL366P - C6orf118	LOC728275, QKI	7E-6	0.5466	74 European ancestry cases, 824 European ancestry controls	NA	NA	NA	NA	NA
+rs9356171	Fulminant type 1 diabetes	RN7SL366P - C6orf118	C6orf118	9E-6	NR	257 Japanese ancestry cases, 419 Japanese ancestry controls	NA	NA	NA	NA	NA
+rs9911533	Allergic disease (asthma, hay fever or eczema)	CCR7 - SMARCE1	KRT24, KRT222, SMARCE1	2E-16	NR	25,685 European ancestry allergic diseases cases, 76,768 European ancestry controls	NA	NA	NA	NA	NA
+rs9911533	Asthma or allergic disease (pleiotropy)	CCR7 - SMARCE1	KRT24, KRT222, SMARCE1	1E-15	NR	14,085 European asthma cases, 25,685 European ancestry allergic diseases cases, 76,768 European ancestry controls	NA	NA	NA	NA	NA
+rs9911533	Type 1 diabetes	CCR7 - SMARCE1	NA	5E-9	0.3659	15,573 European ancestry cases, 158,408 European ancestry controls	NA	NA	NA	NA	NA
+rs9911533	Ulcerative colitis	CCR7 - SMARCE1	NA	2E-14	NR	6,862 East Asian ancestry cases, 15,456 East Asian ancestry controls, 16,390 European ancestry cases, 336,800 European ancestry controls	NA	NA	NA	NA	NA
+rs9911533	Inflammatory bowel disease	CCR7 - SMARCE1	NA	2E-11	NR	14,393 East Asian ancestry cases, 15,456 East Asian ancestry controls, 30,713 European ancestry cases, 338,106 European ancestry controls	NA	NA	NA	NA	NA
+rs9911533	Atopic dermatitis	CCR7 - SMARCE1	NA	7E-19	NR	2,597 Japanese ancestry cases, 110,504 Japanese ancestry controls, 25,685 European ancestry cases, 76,768 European ancestry controls	NA	NA	NA	NA	NA
