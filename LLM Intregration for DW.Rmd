@@ -7,9 +7,9 @@ library(jsonlite)
 #install.packages("GenAI")
 library(GenAI)
 usethis::edit_r_environ()
-Sys.getenv("GOOGLE_API_KEY")
+api <- Sys.getenv("GOOGLE_API_KEY")
 # Setup
-google <- genai.google(api = "", model ="gemini-2.5-flash", version="v1")
+google <- genai.google(api = api, model ="gemini-2.5-flash", version="v1")
 
 # 3. Use the txt() function instead of gen()
 response <- txt(genai.object = google, 
@@ -37,8 +37,32 @@ colnames(gwas_accession)
 ```{r}
 library(jsonlite)
 
-# Define the function
 infer_variant_column_types <- function(Variant_data, genai_obj) {
+  
+  # 0. Drop irrelevant columns before analysis
+  cols_to_drop <- c(
+    # Somatic / Oncogenicity block
+    "SomaticClinicalImpact",
+    "SomaticClinicalImpactLastEvaluated",
+    "ReviewStatusClinicalImpact",
+    "Oncogenicity",
+    "OncogenicityLastEvaluated",
+    "ReviewStatusOncogenicity",
+    # VCF formatting columns
+    "PositionVCF",
+    "ReferenceAlleleVCF",
+    "AlternateAlleleVCF",
+    # Aggregate SCV fields
+    "SCVsForAggregateGermlineClassification",
+    "SVCsForAgreggateSomaticClinicalImpact",
+    "SCVSForAggregatedOncogenicityClassification",
+    # Testing registry
+    "TestedInGTR"
+  )
+  
+  Variant_data <- Variant_data %>%
+    select(-any_of(cols_to_drop))
+  
   # 1. Sample the data
   col_samples <- sapply(names(Variant_data), function(col) {
     vals <- na.omit(Variant_data[[col]])[1:3]
@@ -46,7 +70,7 @@ infer_variant_column_types <- function(Variant_data, genai_obj) {
     paste0(col, ": [", paste(vals, collapse = ", "), "]")
   })
   
-  # 2. Build the prompt (using single quotes for the string to avoid escape errors)
+  # 2. Build the prompt
   prompt <- paste0(
     "You are a genomic data expert analyzing a ClinVar dataset.\n",
     "Classify each column as: Numerical, Categorical, Datetime, Ignorable_ID, Formatted_ID, Sentence, URL, List, or Text.\n",
@@ -91,213 +115,418 @@ if (!is.null(fti_results_variant)) {
   print(influential_cols)
 }
 ```
- *gwas_accession -> GWAS, Accesssion
- 
-```{r}
-infer_gwas_column_types <- function(GWAS_data, genai_obj) {
-  # Sample data for context
-  col_samples <- sapply(names(GWAS_data), function(col) {
-    vals <- na.omit(GWAS_data[[col]])[1:3]
-    if(length(vals) == 0) vals <- "All NA"
-    paste0(col, ": [", paste(vals, collapse = ", "), "]")
-  })
-  
-  # Prompt adjusted for GWAS logic
-  prompt <- paste0(
-    "You are a genomic expert analyzing GWAS summary statistics (accession data).\n",
-    "Classify each column as: Numerical, Categorical, Datetime, Ignorable_ID, Formatted_ID, Sentence, URL, List, or Text.\n",
-    "Flag 'influential' as true if the column is critical for statistical association analysis for:\n",
-    "1. Type 1 Diabetes (T1D)\n",
-    "2. Food-related Anaphylaxis/Allergies\n",
-    "Prioritize columns containing p-values, effect sizes (OR/beta), rsIDs, or population/ancestry data.\n",
-    "Return only raw JSON: [{\"column\": \"...\", \"type\": \"...\", \"influential\": true/false}]\n\n",
-    paste(col_samples, collapse = "\n")
-  )
-  
-  # Execute and Clean
-  result <- txt(genai.object = genai_obj, prompt = prompt)
-  clean_json <- gsub("```json|```", "", result)
-  
-  tryCatch({
-    fromJSON(clean_json)
-  }, error = function(e) {
-    message("JSON Error. Raw output: ", result)
-    return(NULL)
-  })
-}
-
-# 1. Initialize your object (ensure you use your new key)
-google_obj <- genai.google(
-  api = api, 
-  model = "gemini-2.5-flash", 
-  version = "v1"
-)
-
-# 2. Run the inference on your variant data
-# Assuming Variant_data is already loaded in your environment
-fti_results_accession <- infer_gwas_column_types(gwas_accession, google_obj)
-
-# 3. Filter for the influential columns
-if (!is.null(fti_results_accession)) {
-  influential_cols <- fti_results_accession$column[fti_results_accession$influential == TRUE]
-  print(influential_cols)
-}
-```
  *gwas_ancestory -> GWAS, Ancestry
  
+parse the sample size strings for a more precise percentage of black participants. I am shooting for atleast 70%
+ 
 ```{r}
-infer_ancestor_column_types <- function(gwas_ancestor, genai_obj) {
-  # Sample a few values per column to keep prompt concise
-  col_samples <- sapply(names(gwas_ancestor), function(col) {
-    vals <- na.omit(gwas_ancestor[[col]])[1:3]
-    # Handle cases where there might be fewer than 3 non-NA values
-    if(length(vals) == 0) vals <- "All NA"
-    paste0(col, ": [", paste(vals, collapse = ", "), "]")
-  })
-  
-  prompt <- paste0(
-    "You are a genomic expert analyzing GWAS (Genome-Wide Association Study) summary statistics.\n",
-    "Classify each column as: Numerical, Categorical, Datetime, Ignorable_ID, Formatted_ID, Sentence, URL, List, or Text.\n",
-    "CRITICAL: Flag 'influential' as true if the column is essential for identifying genetic associations for:\n",
-    "1. Type 1 Diabetes (T1D)\n",
-    "2. Food-related Anaphylaxis/Allergies\n",
-    "3. Population-specific data (e.g., Ethnicity, Ancestry, African/Black population markers).\n",
-    "Prioritize columns containing: P-values, Beta coefficients, Odds Ratios (OR), rsIDs, and Sample Ancestry.\n",
-    "Return only raw JSON: [{\"column\": \"...\", \"type\": \"...\", \"influential\": true/false}]\n\n",
-    paste(col_samples, collapse = "\n")
-  )
-  
-  # Use the working GenAI txt() function
-  result <- txt(genai.object = genai_obj, prompt = prompt)
-  
-  # Clean the response string (removes markdown code blocks if the LLM adds them)
-  clean_json <- gsub("```json|```", "", result)
-  
-  # Convert to data frame
-  tryCatch({
-    fromJSON(clean_json)
-  }, error = function(e) {
-    message("Error parsing JSON from LLM. Raw output was: ", result)
-    return(NULL)
-  })
-}
-
-# 1. Initialize your object (ensure you use your new key)
-google_obj <- genai.google(
-  api = api, 
-  model = "gemini-2.5-flash", 
-  version = "v1"
-)
-
-# 2. Run the inference on your variant data
-# Assuming Variant_data is already loaded in your environment
-fti_results_ancestor <- infer_ancestor_column_types(gwas_ancestor, google_obj)
-
-# 3. Filter for the influential columns
-if (!is.null(fti_results)) {
-  influential_cols <- fti_results_ancestor$column[fti_results_ancestor$influential == TRUE]
-  print(influential_cols)
-}
-```
-## Audit to verify if the chromosomal "maps" match between ClinVar and GWAS
-```{r}
-library(jsonlite)
-library(dplyr)
 library(stringr)
 
-# --- THE AUDIT ---
-check_genome_build <- function(Variant_data, GWAS_data, genai_obj) {
-  # Sample positions for the AI to inspect
-  var_pos <- na.omit(Variant_data$PositionVCF)[1:5]
-  gwas_pos <- na.omit(GWAS_data$CHR_POS)[1:5]
+# Now run the percentage calculation on the unfiltered data
+gwas_ancestor_pct <- gwas_ancestor %>%
+  mutate(group_n = as.numeric(str_replace_all(`NUMBER OF INDIVIDUALS`, ",", ""))) %>%
+  group_by(`STUDY ACCESSION`) %>%
+  mutate(total_n = sum(group_n, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(
+    is_african = str_detect(
+      `BROAD ANCESTRAL CATEGORY`,
+      "African American|Afro-Caribbean|African unspecified|Sub-Saharan African"
+    ),
+    african_n = ifelse(is_african, group_n, 0)
+  ) %>%
+  group_by(`STUDY ACCESSION`) %>%
+  mutate(
+    study_pct_african = sum(african_n, na.rm = TRUE) / max(total_n, na.rm = TRUE)
+  ) %>%
+  ungroup() %>%
+  # NOW filter to studies where African ancestry is at least 70%
+  filter(study_pct_african >= 0.70) %>%
+  # And keep only the African ancestry rows from those studies
+  filter(is_african == TRUE)
+
+gwas_ancestor_pct
+
+gwas_ancestor_pct %>%
+  summarise(n_studies = n_distinct(`STUDY ACCESSION`))
+
+#write_tsv(gwas_ancestor_pct, 
+#          "C:/Data Wrangling/Data Wrangling/Final #Project/gwas_filtered_black_70pct.tsv")
+```
+
+I need to remove the columns I don't want to keep from gwas_ancestor_pct so that when I join it there will be less duplications. 
+
+```{r}
+col1 <- colnames(gwas_ancestor_pct)
+col2 <- colnames(gwas_accession)
+col1
+col2
+
+gwas_accession <- gwas_accession %>% select((-c(2,3,4)))
+
+colnames(gwas_accession)
+```
+
+
+I now need to join my filtered ancestry data with my accession data by the  study accession
+
+```{r}
+gwas_joined <- gwas_ancestor_pct %>%
+  inner_join(gwas_accession, 
+            by = "STUDY ACCESSION",
+            relationship = "many-to-many")
+colnames(gwas_joined)
+nrow(gwas_joined)
+n_distinct(gwas_joined$`SNPS`)
+n_distinct(gwas_joined$`STUDY ACCESSION`)
+
+gwas_joined %>% summarise(
+  Rows = n(),
+    Distinct_SNPs = n_distinct(SNPS),
+    Distinct_Accessions = n_distinct(`STUDY ACCESSION`)
+)
+#get rid out duplicate columns
+remove_duplicate_cols_llm <- function(df, genai_obj) {
+  
+  col_list <- paste(colnames(df), collapse = ", ")
   
   prompt <- paste0(
-    "You are a bioinformatics auditor. Identify the Genome Build for these two datasets.\n",
-    "Dataset A (ClinVar) sample positions: ", paste(var_pos, collapse=", "), "\n",
-    "Dataset B (GWAS) sample positions: ", paste(gwas_pos, collapse=", "), "\n",
-    "Return only raw JSON: {\"variant_build\": \"...\", \"gwas_build\": \"...\", \"match\": true/false}"
+    "You are a data wrangling expert analyzing a joined GWAS dataset.\n",
+    "Here are the column names after joining an ancestry file with a GWAS associations file:\n\n",
+    col_list, "\n\n",
+    "Identify columns that are:\n",
+    "1. Redundant duplicates of another column\n",
+    "2. Intermediate calculation columns no longer needed for analysis\n",
+    "3. Irrelevant to a study focused on Type 1 Diabetes, food allergy/anaphylaxis,",
+    " and Black population representation in GWAS\n\n",
+    "Return only raw JSON: [\"column_name_1\", \"column_name_2\"] — ",
+    "a flat list of column names to DROP. No explanation, no markdown."
   )
   
+  # Use your working method instead of llm_call
   result <- txt(genai.object = genai_obj, prompt = prompt)
-  return(fromJSON(gsub("```json|```", "", result)))
-}
-```
-## Pre-join Data Cleaning
-
-```{r}
-# --- PRE-JOIN DATA CLEANING ---
-
-# 1. Standardize rsIDs (Extract only the numbers)
-# Assumes 'SNPS' in Accession and 'RS# (dbSNP)' in Variant
-gwas_accession$rs_num <- str_extract(gwas_accession$SNPS, "[0-9]+")
-Variant_data$rs_num <- str_extract(Variant_data$`RS# (dbSNP)`, "[0-9]+")
-
-# 2. Standardize Chromosomes (Ensure they are characters)
-gwas_accession$chr_clean <- as.character(gwas_accession$CHR_ID)
-Variant_data$chr_clean <- as.character(Variant_data$Chromosome)
-
-# 3. Standardize Positions (Ensure they are numeric)
-gwas_accession$pos_clean <- as.numeric(gwas_accession$CHR_POS)
-Variant_data$pos_clean <- as.numeric(Variant_data$PositionVCF)
-
-# --- THE AUDIT EXECUTION ---
-build_info <- check_genome_build(Variant_data, gwas_accession, google_obj)
-
-# --- THE FINAL JOIN ---
-if(build_info$match == FALSE) {
-  message("Warning: Genome builds do not match (", build_info$variant_build, " vs ", build_info$gwas_build, ").")
-  message("Joining primarily by RSID to maintain data integrity.")
   
-  # Fallback: Join only on RSID
-  final_master_df <- gwas_accession %>%
-    left_join(Variant_data, by = "rs_num")
-    
-} else {
-  message("Builds match (", build_info$variant_build, ").")
-  message("Proceeding with high-precision Dual-Key Join (RSID + Position).")
+  # Parse the JSON list of columns to drop
+  cols_to_drop <- fromJSON(gsub("```json|```", "", result))
   
-  # Precision Join: Match on RSID AND Chromosome AND Position
-  final_master_df <- gwas_accession %>%
-    left_join(Variant_data, by = c("rs_num", "chr_clean", "pos_clean"))
+  cat("Gemini recommends dropping:\n")
+  print(cols_to_drop)
+  
+  # Drop them
+  df %>% dplyr::select(-any_of(cols_to_drop))
 }
 
-# --- FINAL POPULATION FILTER ---
-# Filter for Black/African ancestry studies from your Ancestor dataset
-final_filtered_df <- final_master_df %>%
-  inner_join(gwas_ancestor, by = "STUDY") %>%
-  filter(grepl("African|Black", `BROAD ANCESTRAL CATEGORY`, ignore.case = TRUE))
+# Run it
+gwas_joined <- remove_duplicate_cols_llm(gwas_joined, google_obj)
+colnames(gwas_joined)
 
-cat("Workflow Complete. Final rows for analysis:", nrow(final_filtered_df), "\n")
 ```
-*Perform a merge on all three datasets 
+> Comments: I am noticing disproportianate amounts between the rows snps and accessions. Claude suggest this could happen for 2 reasons:
+1. The same SNP could be studied in multiple different studies
+2. The same SNP could be associated with multiple traits
+
+I could explore this by: 
+
+1. filter out the data only to repeated SNPs 
+
+2. filter out the data only to repeated accessions
+
 ```{r}
-# 1. Get the new logic
-logic <- get_dual_join_logic(fti_results_variant, fti_results_accession, fti_results_ancestor, google_obj)
+# 1. Filter to only repeated SNPs
+repeated_snps <- gwas_joined %>%
+  group_by(SNPS) %>%
+  filter(n() > 1) %>%
+  ungroup() %>%
+  arrange(SNPS)
 
-# 2. Study-level Join (Ancestor to Accession)
-study_merged <- inner_join(gwas_accession, gwas_ancestor, by = logic$anc_to_acc)
+repeated_snps <- repeated_snps %>% select(`STUDY ACCESSION`, `DISEASE/TRAIT`, SNPS) %>% arrange(SNPS)
 
-# 3. Data Cleaning for Dual-Key Match
-# Ensure Chromosomes are characters (to avoid 'X' vs 23 issues)
-study_merged$chr_clean <- as.character(study_merged[[logic$chr_keys[1]]])
-Variant_data$chr_clean <- as.character(Variant_data[[logic$chr_keys[2]]])
 
-# Ensure Positions are numeric
-study_merged$pos_clean <- as.numeric(study_merged[[logic$pos_keys[1]]])
-Variant_data$pos_clean <- as.numeric(Variant_data[[logic$pos_keys[2]]])
+nrow(repeated_snps)
+n_distinct(repeated_snps$SNPS)
 
-# Extract RSID numbers
-study_merged$rs_num <- str_extract(study_merged[[logic$rs_keys[1]]], "[0-9]+")
-Variant_data$rs_num <- str_extract(Variant_data[[logic$rs_keys[2]]], "[0-9]+")
+# 2. Filter to only repeated accessions
+repeated_accessions <- gwas_joined %>%
+  group_by(`STUDY ACCESSION`) %>%
+  filter(n() > 1) %>%
+  ungroup() %>%
+  arrange(`STUDY ACCESSION`)
 
-# 4. PERFORM THE DUAL-KEY JOIN
-# This matches on RSID OR (Chromosome + Position)
-final_master_df <- study_merged %>%
-  left_join(Variant_data, by = c("rs_num", "chr_clean", "pos_clean"))
+repeated_accessions <- repeated_accessions %>% select(`STUDY ACCESSION`, `DISEASE/TRAIT`, SNPS) %>% arrange(SNPS)
 
-cat("Dual-Key Join Complete. Checking for matches...")
+nrow(repeated_accessions)
+n_distinct(repeated_accessions$`STUDY ACCESSION`)
+
+
+```
+> Comments: 
+* Repeated SNPs across different studies = replication = strengthens significance
+* Repeated SNPs across different traits = shared loci = your gold data
+* Repeated accessions = one study found multiple SNPs = normal GWAS output
+
+Now that I have done that I can try to explore SNPS with T1D and allergy traits even though I don't expect to find much
+```{r}
+# Find your shared loci
+t1d_snps <- gwas_joined %>%
+  filter(str_detect(`DISEASE/TRAIT`, 
+         regex("type 1 diabetes|T1D|IDDM|autoimmune diabetes", 
+               ignore_case = TRUE))) %>%
+  pull(SNPS)
+
+allergy_snps <- gwas_joined %>%
+  filter(str_detect(`DISEASE/TRAIT`, 
+         regex("anaphylaxis|allergy|mastocytosis|asthma|eczema|rhinitis|atop", 
+               ignore_case = TRUE))) %>%
+  pull(SNPS)
+
+# The intersection — your core finding
+shared_snps <- intersect(t1d_snps, allergy_snps)
+
+cat("Shared SNPs between T1D and Allergy phenotypes:\n")
+print(shared_snps)
+cat("\nTotal shared:", length(shared_snps))
+```
+ So I expected that to return 0 instead I will seel the unique disease/traits
+ 
+```{r}
+# See all unique disease traits in your Black-filtered GWAS data
+gwas_joined %>%
+  count(`DISEASE/TRAIT`, sort = TRUE) %>%
+  print(n = 50) 
+```
+It appears that T1D and allergy traits are barried in the frequency list of diesease and traits 
+```{r}
+# Search specifically for your phenotypes
+gwas_joined %>%
+  filter(str_detect(`DISEASE/TRAIT`,
+         regex("type 1|T1D|anaphyl|food allerg|mastocyt|atop|rhinitis|eczema|asthma",
+               ignore_case = TRUE))) %>%
+  count(`DISEASE/TRAIT`, sort = TRUE) %>%
+  print(n = 50)
 ```
 
+Let's try the shared loci again 
+```{r}
+# Run your shared loci search again with expanded allergy terms
+t1d_snps <- gwas_joined %>%
+  filter(str_detect(`DISEASE/TRAIT`,
+         regex("type 1 diabetes|T1D", ignore_case = TRUE))) %>%
+  pull(SNPS)
+
+allergy_snps <- gwas_joined %>%
+  filter(str_detect(`DISEASE/TRAIT`,
+         regex("atopic dermatitis|asthma|anaphylactic|allergic march|eczema",
+               ignore_case = TRUE))) %>%
+  pull(SNPS)
+
+shared_snps <- intersect(t1d_snps, allergy_snps)
+cat("Shared SNPs:", length(shared_snps))
+```
+
+Let's check if shared SNPs exist in the unfiltered GWAS data
+```{r}
+# Run the same search on your UNFILTERED gwas data
+t1d_snps_all <- gwas_accession %>%
+  filter(str_detect(`DISEASE/TRAIT`,
+         regex("type 1 diabetes|T1D", ignore_case = TRUE))) %>%
+  pull(SNPS)
+
+allergy_snps_all <- gwas_accession %>%
+  filter(str_detect(`DISEASE/TRAIT`,
+         regex("atopic dermatitis|asthma|anaphylactic|allergic march",
+               ignore_case = TRUE))) %>%
+  pull(SNPS)
+
+shared_snps_all <- intersect(t1d_snps_all, allergy_snps_all)
+cat("Shared SNPs in full dataset:", length(shared_snps_all))
+```
+> Comments: 
+* Full unfiltered GWAS data → 30 shared SNPs between T1D and allergy phenotypes
+* Black ancestry filtered data (70%+) → 0 shared SNPs
+
+This is a REALLY big discovery:
+Shared genetic loci between T1D and allergic phenotypes do exist in the literature
+Those same loci have never been studied in Black populations at a meaningful scale
+
+Next, I want to dig deeper into the 30 SNPs that were caught. 
+
+```{r}
+# Get full details on your 30 shared SNPs
+shared_snps_detail <- gwas_accession %>%
+  filter(SNPS %in% shared_snps_all) %>%
+  select(SNPS, `DISEASE/TRAIT`, `MAPPED_GENE`, 
+         `REPORTED GENE(S)`, `P-VALUE`, 
+         `RISK ALLELE FREQUENCY`,
+         `INITIAL SAMPLE SIZE`) %>%
+  arrange(SNPS)
+
+# View them
+print(shared_snps_detail, n = 50)
+
+# Check which genes they map to
+shared_snps_detail %>%
+  count(`MAPPED_GENE`, sort = TRUE)
+
+# Check which traits they span
+shared_snps_detail %>%
+  count(`DISEASE/TRAIT`, sort = TRUE)
+```
+
+I want to add my clinvar variant summary data the accession dataset with the 30 SNPS as a clinical validation layer. 
+
+```{r}
+# ============================================================
+# CLINVAR VALIDATION OF 30 SHARED SNPs
+# ============================================================
+
+# ---- 1. Clean ClinVar - Drop Irrelevant Columns ----
+cols_to_drop <- c(
+  "SomaticClinicalImpact",
+  "SomaticClinicalImpactLastEvaluated",
+  "ReviewStatusClinicalImpact",
+  "Oncogenicity",
+  "OncogenicityLastEvaluated",
+  "ReviewStatusOncogenicity",
+  "PositionVCF",
+  "ReferenceAlleleVCF",
+  "AlternateAlleleVCF",
+  "SCVsForAggregateGermlineClassification",
+  "SVCsForAgreggateSomaticClinicalImpact",
+  "SCVSForAggregatedOncogenicityClassification",
+  "TestedInGTR"
+)
+
+Variant_data_clean <- Variant_data %>%
+  select(-any_of(cols_to_drop))
+
+# ---- 2. Match ClinVar entries to your 30 shared SNPs ----
+clinvar_rsids <- Variant_data_clean %>%
+  mutate(SNPS = paste0("rs", `RS# (dbSNP)`)) %>%
+  filter(SNPS %in% shared_snps_all)
+
+# ---- 3. Check coverage ----
+cat("Shared SNPs with ClinVar entries:", n_distinct(clinvar_rsids$SNPS))
+cat("\nShared SNPs NOT in ClinVar:", 
+    length(setdiff(shared_snps_all, clinvar_rsids$SNPS)))
+
+# ---- 4. Join ClinVar validation to shared SNP details ----
+shared_validated <- shared_snps_detail %>%
+  left_join(
+    clinvar_rsids %>%
+      dplyr::select(
+        SNPS, GeneSymbol, ClinicalSignificance,
+        ReviewStatus, NumberSubmitters, PhenotypeList
+      ) %>%
+      # Keep the most reviewed ClinVar entry per SNP
+      group_by(SNPS) %>%
+      slice_max(as.numeric(NumberSubmitters), n = 1, with_ties = FALSE) %>%
+      ungroup(),
+    by = "SNPS",
+    relationship = "many-to-many"
+  )
+
+# Check results
+cat("Rows in validated table:", nrow(shared_validated))
+cat("\nDistinct SNPs:", n_distinct(shared_validated$SNPS))
+
+# ---- 5. View final validated table ----
+shared_validated %>%
+  select(
+    SNPS, `DISEASE/TRAIT`, `MAPPED_GENE`,
+    ClinicalSignificance, ReviewStatus,
+    NumberSubmitters, PhenotypeList
+  ) %>%
+  print(n = 50)
+
+
+```
+> Comments: 
+* 2 SNPs have ClinVar entries
+* 28 SNPs are NOT in ClinVar
+* 30 distinct SNPs total 
+
+Overall findings:
+2 SNPs have ClinVar entries
+28 SNPs are NOT in ClinVar
+30 distinct SNPs total 
+
+The 2 validated SNPs 
+
+```{r}
+# Isolate the 2 SNPs that DO have ClinVar entries
+clinvar_confirmed <- shared_validated %>%
+  filter(!is.na(ClinicalSignificance)) %>%
+  dplyr::select(
+    SNPS, `DISEASE/TRAIT`, `MAPPED_GENE`,
+    GeneSymbol, ClinicalSignificance,
+    ReviewStatus, NumberSubmitters, PhenotypeList
+  )
+
+print(clinvar_confirmed)
+```
+> Comments: 
+The two Genes:
+IL7R (Interleukin-7 Receptor)
+This is a well established T1D susceptibility gene — IL7R variants affect T cell development and survival, which is directly relevant to the autoimmune destruction of pancreatic beta cells in T1D. But crucially IL7R is also implicated in allergic inflammation and atopic conditions because it plays a role in regulating the balance between immune tolerance and hypersensitivity. A shared SNP here makes strong biological sense.
+RPS26 (Ribosomal Protein S26)
+This one is particularly interesting — RPS26 sits in the chromosome 12q13 region and has been associated with T1D susceptibility through effects on INS (insulin gene) expression. More recently it has been implicated in immune cell function broadly. Its appearance as a shared locus between T1D and allergy phenotypes is a novel finding worth highlighting.
+
+Full clinical details here:
+```{r}
+clinvar_confirmed %>%
+  select(
+    SNPS, `DISEASE/TRAIT`, GeneSymbol,
+    ClinicalSignificance, ReviewStatus,
+    NumberSubmitters, PhenotypeList
+  ) %>%
+  print(n = 50)
+```
+Deep dive into the specific allergy and T1D traits 
+
+```{r}
+shared_snps_detail %>%
+  filter(SNPS %in% clinvar_confirmed$SNPS) %>%
+  select(SNPS, `DISEASE/TRAIT`, `MAPPED_GENE`) %>%
+  arrange(SNPS)
+
+```
+> Comments: Now I can see what the SNP is associated with: 
+rs6897932 → IL7R
+This SNP is associated with:
+Type 1 diabetes ✅
+Asthma ✅
+Multiple sclerosis
+Primary biliary cholangitis
+Systemic lupus erythematosus
+IL7R protein levels
+rs705704 → RPS26
+This SNP is associated with:
+Type 1 diabetes ✅
+Asthma ✅
+Body mass index
+Metabolic syndrome
+Forced expiratory volume
+Medication use (thyroid preparations)
+
+
+
+Summary Narrative 
+```{r}
+# Summarize your complete findings
+cat("==============================================")
+cat("\nKEY FINDINGS SUMMARY")
+cat("\n==============================================")
+cat("\n1. Shared T1D-Allergy SNPs in full GWAS:", length(shared_snps_all))
+cat("\n2. Shared SNPs studied in Black populations:", length(shared_snps_black))
+cat("\n3. Shared SNPs clinically validated in ClinVar:", n_distinct(clinvar_confirmed$SNPS))
+cat("\n4. Shared SNPs never clinically catalogued:", 
+    length(setdiff(shared_snps_all, clinvar_rsids$SNPS)))
+cat("\n----------------------------------------------")
+cat("\nClinically validated shared loci:")
+cat("\n  - rs6897932 (IL7R): T1D + Asthma + Autoimmune")
+cat("\n  - rs705704  (RPS26): T1D + Asthma + Metabolic")
+cat("\n==============================================\n")
+```
 I need to run some simple plots for the categorical and continous variables to better understand the data that I have. Then I can resume the filter and joining. 
 
 When order matters = Ordinal 
