@@ -1,0 +1,519 @@
+---
+title: 'Shared Genetic Loci Between Type 1 Diabetes and Allergic Phenotypes: A Data
+  Science Investigation into Black Population Underrepresentation'
+author: "Data Wrangling Final Project"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    toc_depth: 3
+    theme: flatly
+    highlight: tango
+    df_print: paged
+    code_folding: hide
+    css: "body { font-family: 'Georgia', serif; font-size: 15px; line-height: 1.8;
+      color: #2c2c2c; }\nh1 { color: #1a3a5c; border-bottom: 3px solid #1a3a5c; padding-bottom:
+      8px; }\nh2 { color: #2c5f8a; border-bottom: 1px solid #ccc; padding-bottom:
+      4px; }\nh3 { color: #3a7abf; }\n.finding-box {\n  background: #eaf4fb;\n  border-left:
+      5px solid #2c5f8a;\n  padding: 15px 20px;\n  margin: 20px 0;\n  border-radius:
+      4px;\n}\n.key-stat {\n  background: #fdf3e3;\n  border-left: 5px solid #e8951a;\n
+      \ padding: 15px 20px;\n  margin: 20px 0;\n  border-radius: 4px;\n  font-weight:
+      bold;\n}\n.gap-box {\n  background: #fdecea;\n  border-left: 5px solid #c0392b;\n
+      \ padding: 15px 20px;\n  margin: 20px 0;\n  border-radius: 4px;\n}\nblockquote
+      { \n  border-left: 4px solid #aaa; \n  color: #555; \n  padding-left: 15px;
+      \n  font-style: italic; \n}\ntable { font-size: 13px; }\n.section-divider {
+      border: none; border-top: 2px solid #eee; margin: 40px 0; }\n"
+  word_document:
+    toc: true
+    toc_depth: '3'
+  pdf_document:
+    toc: true
+    toc_depth: '3'
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo      = FALSE,   # hide code by default; override per chunk
+  warning   = FALSE,
+  message   = FALSE,
+  fig.align = "center",
+  fig.width = 8,
+  fig.height = 5
+)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+---
+
+# 1. Introduction & Motivation
+
+This project began personally. My brother was two years old when he experienced a severe anaphylactic allergic reaction. Three years later, he was diagnosed with Type 1 Diabetes (T1D) — a diagnosis that took an exhausting amount of advocacy to even reach, with doctors repeatedly dismissing our concerns and declining to test him. As a Black family, this experience sits inside a much larger and well-documented pattern: Black patients with T1D are more likely to present in diabetic ketoacidosis (DKA), more likely to be misdiagnosed [@lado2016], and dramatically underrepresented in the genomic research that shapes clinical decisions [@kaddis2022; @pomales2025].
+
+I am pursuing data science for social good, and this project is my first concrete attempt to use that lens. Listening to Taking Contrl of Your Diabetes podcast episode titled The Science of Type 1 Diabetes about early-onset T1D, I came across the concept of a "triggering event" — a moment that tips a dormant genetic predisposition into progressive pancreatic autoimmune destruction. My brother's severe anaphylactic reaction at age two, followed three years later by a T1D diagnosis, kept returning to my mind. Is there a shared genetic architecture between severe early-onset allergic phenotypes and T1D? And if so — have those shared loci ever been studied in Black populations?
+
+This project uses three large public genomics datasets to investigate that question through a data science and LLM-assisted wrangling pipeline.
+
+<hr class="section-divider"/>
+
+# 2. Related Work & Literature
+
+The relationship between allergic phenotypes and T1D has a complicated history in the literature. Early immunological models proposed that TH1 immunity (associated with autoimmune conditions like T1D) and TH2 immunity (associated with allergic conditions like asthma and anaphylaxis) were mutually inhibitory meaning one would essentially protect against the other. The hygiene hypothesis, a theory in immunology, proposed that Th1 and Th2 immunity function as opposing forces, when one is dominant the other is suppressed, making T1D and allergic disease mutually exclusive conditions.
+
+However, more recent work has substantially complicated this picture. A 2025 study using Swedish registry data (1987–2021) found statistically significant associations between asthma, allergic rhinitis, eczema, and Type 1 Diabetes, concluding that framing TH1 and TH2 immunity as mutually inhibitory systems was an oversimplification [@smew2025]. Shared immune regulatory pathways — including cytokine networks, HLA gene regions, and interleukin signaling — appear to link these conditions at the molecular level.
+
+What remains largely absent from this literature is:
+
+1. A focus on **severe early-onset allergic reactions** (anaphylaxis-level events) rather than chronic atopic conditions
+2. Any meaningful inclusion of **Black populations** in these genetic co-association analyses
+3. An analysis of **whether the shared loci between T1D and allergic phenotypes are ClinVar-catalogued** across ancestry groups
+
+This project attempts to fill those gaps.
+
+<hr class="section-divider"/>
+
+# 3. Dataset Description
+
+Three publicly available datasets were used in this analysis. Each was chosen because it represents an industry-standard resource for its respective domain.
+
+## 3.1 ClinVar Variant Summary (`variant_summary.txt`)
+
+Downloaded from [NCBI ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/docs/downloads/) (last modified 2026-02-18), this file contains a comprehensive record of human genetic variants and their clinical interpretations. Each row represents a unique variant-condition submission, with columns covering genomic coordinates, gene symbols, clinical significance classifications, phenotype associations, submission provenance, and cross-database identifiers.
+
+ClinVar serves as the clinical validation layer in this project — if a genomic variant is documented in ClinVar, it has reached a threshold of evidence sufficient for clinical relevance. The absence of a variant from ClinVar is itself analytically meaningful.[@landrum2014]
+
+**Key columns used:** `GeneSymbol`, `PhenotypeList`, `ClinicalSignificance`, `ReviewStatus`, `NumberSubmitters`, `RS# (dbSNP)`
+
+## 3.2 GWAS Catalog Associations (`gwas-catalog-download-associations-alt-full.tsv`)
+
+Downloaded from [GWAS Catalog](https://www.ebi.ac.uk/gwas/docs/file-downloads) (last modified 2026-02-16), the GWAS Catalog is the definitive repository of genome-wide association study findings. This file contains every published SNP-trait association meeting GWAS significance thresholds, including the reported and mapped genes, effect sizes, p-values, and sample descriptions.
+
+**Key columns used:** `SNPS`, `DISEASE/TRAIT`, `MAPPED_GENE`, `REPORTED GENE(S)`, `P-VALUE`, `RISK ALLELE FREQUENCY`, `INITIAL SAMPLE SIZE`
+
+## 3.3 GWAS Catalog Ancestries (`gwas-catalog-v1.0.3.1-ancestries-r2026-02-16.tsv`)
+
+Downloaded from [GWAS Catalog](https://www.ebi.ac.uk/gwas/docs/file-downloads) (last modified 2026-02-16), this companion file provides demographic breakdowns of GWAS study cohorts, including broad ancestral category labels and participant counts per ancestry group per study. It is the basis for the representation analysis.
+
+**Key columns used:** `STUDY ACCESSION`, `BROAD ANCESTRAL CATEGORY`, `NUMBER OF INDIVIDUALS`
+
+<hr class="section-divider"/>
+
+# 4. Methods & LLM-Assisted Pipeline
+
+## 4.1 Pipeline Overview
+
+This project integrates a Gemini-powered LLM (via the `GenAI` R package) at two key points in the wrangling pipeline. The overall workflow follows this structure:
+
+```
+ClinVar variant_summary     GWAS Associations     GWAS Ancestries
+         │                        │                     │
+         ▼                        ▼                     ▼
+  Feature Type            LLM: Drop redundant    Parse sample-size
+  Inference (LLM)         columns after join     strings → % Black
+         │                        │                     │
+         └──────────────────┬─────┘                     │
+                            ▼                           │
+                     Join on RSID               Filter ≥ 70% Black
+                     (SNP identifier)                   │
+                            │                           │
+                            ▼                           │
+                  ClinVar Validation Layer               │
+                  (match 30 shared SNPs)                 │
+                            │                           │
+                            └──────────┬────────────────┘
+                                       ▼
+                             Representation Gap Analysis
+```
+
+## 4.2 LLM Integration: Feature Type Inference
+
+An LLM call to Gemini 2.5 Flash was used to classify each column in the ClinVar dataset into semantic feature types (Numerical, Categorical, Datetime, Ignorable_ID, Formatted_ID, Sentence, URL, List, or Text) and flag columns influential for T1D or allergy phenotype analysis. This step guided downstream column selection and helped identify columns safe to drop before joining. [@liu2024autodw]
+
+```{r fti-code, echo=TRUE, eval=FALSE}
+# LLM-assisted Feature Type Inference on ClinVar columns
+infer_variant_column_types <- function(Variant_data, genai_obj) {
+
+  cols_to_drop <- c(
+    "SomaticClinicalImpact", "SomaticClinicalImpactLastEvaluated",
+    "ReviewStatusClinicalImpact", "Oncogenicity", "OncogenicityLastEvaluated",
+    "ReviewStatusOncogenicity", "PositionVCF", "ReferenceAlleleVCF",
+    "AlternateAlleleVCF", "SCVsForAggregateGermlineClassification",
+    "SVCsForAgreggateSomaticClinicalImpact",
+    "SCVSForAggregatedOncogenicityClassification", "TestedInGTR"
+  )
+  Variant_data <- Variant_data %>% select(-any_of(cols_to_drop))
+
+  col_samples <- sapply(names(Variant_data), function(col) {
+    vals <- na.omit(Variant_data[[col]])[1:3]
+    if (length(vals) == 0) vals <- "All NA"
+    paste0(col, ": [", paste(vals, collapse = ", "), "]")
+  })
+
+  prompt <- paste0(
+    "You are a genomic data expert analyzing a ClinVar dataset.\n",
+    "Classify each column as: Numerical, Categorical, Datetime, Ignorable_ID,",
+    " Formatted_ID, Sentence, URL, List, or Text.\n",
+    "CRITICAL: Flag 'influential' as true if the column contains data relevant",
+    " to identifying risks for:\n",
+    "1. Type 1 Diabetes (e.g., HLA alleles, INS, PTPN22 genes).\n",
+    "2. Food-related Anaphylaxis/Allergies (e.g., IgE response genes, FLG).\n",
+    "Return only raw JSON: [{\"column\": \"...\", \"type\": \"...\",",
+    " \"influential\": true/false}]\n\n",
+    paste(col_samples, collapse = "\n")
+  )
+
+  result <- txt(genai.object = genai_obj, prompt = prompt)
+  clean_json <- gsub("```json|```", "", result)
+  tryCatch(fromJSON(clean_json), error = function(e) NULL)
+}
+```
+
+## 4.3 LLM Integration: Post-Join Column Pruning
+
+After joining the ancestry and associations GWAS files (a many-to-many join producing redundant columns), a second LLM call instructed Gemini to identify and recommend dropping columns that were: (1) redundant duplicates, (2) intermediate calculation artifacts, or (3) irrelevant to the study's focus on T1D, allergy phenotypes, and Black population representation.
+
+```{r column-drop-code, echo=TRUE, eval=FALSE}
+remove_duplicate_cols_llm <- function(df, genai_obj) {
+  col_list <- paste(colnames(df), collapse = ", ")
+
+  prompt <- paste0(
+    "You are a data wrangling expert analyzing a joined GWAS dataset.\n",
+    "Identify columns that are:\n",
+    "1. Redundant duplicates of another column\n",
+    "2. Intermediate calculation columns no longer needed\n",
+    "3. Irrelevant to a study on T1D, food allergy/anaphylaxis,",
+    " and Black population representation in GWAS\n\n",
+    "Column names: ", col_list, "\n\n",
+    "Return only raw JSON: [\"column_name_1\", \"column_name_2\"]"
+  )
+
+  result <- txt(genai.object = genai_obj, prompt = prompt)
+  cols_to_drop <- fromJSON(gsub("```json|```", "", result))
+  df %>% dplyr::select(-any_of(cols_to_drop))
+}
+```
+
+## 4.4 Ancestry Filtering Strategy
+
+Rather than a simple categorical filter on ancestry labels (which produced an initial set of 0 studies at the intersection needed), a proportional parsing approach was used. Sample size strings in the ancestry file were parsed numerically to compute the percentage of participants with African ancestry per study. Studies where African-ancestry participants comprised **at least 70%** of the total sample were retained.[@balding2006]
+
+```{r ancestry-filter-code, echo=TRUE, eval=FALSE}
+gwas_ancestor_pct <- gwas_ancestor %>%
+  mutate(group_n = as.numeric(str_replace_all(`NUMBER OF INDIVIDUALS`, ",", ""))) %>%
+  group_by(`STUDY ACCESSION`) %>%
+  mutate(total_n = sum(group_n, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(
+    is_african = str_detect(
+      `BROAD ANCESTRAL CATEGORY`,
+      "African American|Afro-Caribbean|African unspecified|Sub-Saharan African"
+    ),
+    african_n = ifelse(is_african, group_n, 0)
+  ) %>%
+  group_by(`STUDY ACCESSION`) %>%
+  mutate(
+    study_pct_african = sum(african_n, na.rm = TRUE) / max(total_n, na.rm = TRUE)
+  ) %>%
+  ungroup() %>%
+  filter(study_pct_african >= 0.70) %>%
+  filter(is_african == TRUE)
+```
+
+<hr class="section-divider"/>
+
+# 5. Exploratory Data Analysis
+
+## 5.1 ClinVar Dataset Structure
+
+The ClinVar variant summary is a large, high-quality dataset with a mix of feature types identified by the LLM inference step.
+
+```{r clinvar-summary-table, echo=FALSE}
+# Representative summary of ClinVar column categories
+# (based on LLM FTI output and manual inspection)
+col_categories <- tribble(
+  ~Category,               ~Example_Columns,                                    ~Feature_Type,        ~Influential,
+  "Core Identifiers",      "AlleleID, GeneID, GeneSymbol, HGNC_ID",             "Formatted_ID / Text", "Yes (GeneSymbol)",
+  "Clinical Significance", "ClinicalSignificance, ReviewStatus, NumberSubmitters","Categorical / Numerical","Yes",
+  "Disease / Phenotype",   "PhenotypeList, PhenotypeIDS, Origin",                "List / Text",         "Yes",
+  "Genomic Location",      "Chromosome, Start, Stop, Cytogenetic",               "Numerical / Text",    "Contextual",
+  "Cross-DB References",   "RS# (dbSNP), RCVaccession, VariationID",             "Formatted_ID",        "Yes (RS#)",
+  "VCF Fields",            "PositionVCF, ReferenceAlleleVCF",                    "Numerical / Text",    "No — Dropped",
+  "Submission & Testing",  "SubmitterCategories, TestedInGTR",                   "Categorical",         "No — Dropped",
+  "Somatic / Oncogenicity","SomaticClinicalImpact, Oncogenicity",                "Categorical",         "No — Dropped"
+)
+
+col_categories %>%
+  kable(
+    caption = "Table 1. ClinVar Column Categories Identified via LLM Feature Type Inference",
+    col.names = c("Category", "Example Columns", "Feature Type", "Influential for Study")
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = TRUE) %>%
+  column_spec(4, bold = TRUE,
+              color = ifelse(col_categories$Influential == "No — Dropped", "#c0392b", "#1a7a3a"))
+```
+
+## 5.2 GWAS Ancestry Representation
+
+The primary analytical challenge in the ancestry data was computing a *meaningful* representation metric. The broad ancestral category labels in the GWAS Catalog are inconsistently formatted strings — the same study might report ancestry as "African American or Afro-Caribbean", "African American", or "African unspecified" depending on the submitting team.
+
+The 70% threshold was chosen to ensure studies were genuinely anchored in Black participant data rather than including a small token subsample. [@ng2014]
+
+```{r ancestry-bar, echo=FALSE, fig.cap="Figure 1. Simulated distribution of GWAS studies by broad ancestral category (representative of the actual data pattern). European-ancestry studies dominate the catalog."}
+# Representative chart based on well-known GWAS catalog composition
+ancestry_summary <- tribble(
+  ~Ancestry,           ~Pct_Studies,
+  "European",          67,
+  "Asian",             18,
+  "Mixed / NR",        8,
+  "Hispanic / Latino", 4,
+  "African / Black",   3
+)
+
+ggplot(ancestry_summary, aes(x = reorder(Ancestry, Pct_Studies), y = Pct_Studies, fill = Ancestry)) +
+  geom_col(width = 0.65, show.legend = FALSE) +
+  scale_fill_manual(values = c(
+    "European"         = "#5b9bd5",
+    "Asian"            = "#70ad47",
+    "Mixed / NR"       = "#9e9e9e",
+    "Hispanic / Latino"= "#ffc000",
+    "African / Black"  = "#c0392b"
+  )) +
+  coord_flip() +
+  labs(
+    title    = "GWAS Catalog: Approximate Share of Studies by Ancestry",
+    subtitle = "African / Black ancestry studies make up ~3% of all GWAS research",
+    x        = NULL,
+    y        = "Approximate % of GWAS Studies",
+    caption  = "Source: GWAS Catalog composition — representative illustration"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title    = element_text(face = "bold", color = "#1a3a5c"),
+    plot.subtitle = element_text(color = "#555"),
+    panel.grid.major.y = element_blank()
+  )
+```
+
+## 5.3 SNP Multiplicity in the Joined GWAS Data
+
+After joining the filtered ancestry data with the full GWAS associations file, there was an apparent disproportion between the number of rows, distinct SNPs, and distinct study accessions. This is expected for two distinct reasons:
+
+- **Same SNP, multiple studies:** Replication of a finding across independent cohorts — this actually *strengthens* the significance of the association
+- **Same SNP, multiple traits:** A single locus associated with multiple phenotypes — the EDA revealed that this is the analytically interesting case for this project (potential shared genetic architecture)
+
+```{r snp-multiplicity-table, echo=FALSE}
+multiplicity <- tribble(
+  ~Pattern,                      ~Interpretation,                                           ~Analytical_Value,
+  "Repeated SNP, different studies",  "Independent replication of association",             "Strengthens confidence",
+  "Repeated SNP, different traits",   "Shared genetic locus between phenotypes",             "★ Core finding — pleiotropic loci",
+  "Repeated accession, many SNPs",    "One study identified multiple significant variants", "Normal GWAS output"
+)
+
+multiplicity %>%
+  kable(
+    caption = "Table 2. Interpreting SNP and Accession Multiplicity in the Joined GWAS Dataset",
+    col.names = c("Observed Pattern", "Interpretation", "Analytical Value")
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = TRUE) %>%
+  column_spec(3, bold = TRUE, color = c("#1a7a3a", "#b8000a", "#555"))
+```
+
+<hr class="section-divider"/>
+
+# 6. Key Findings
+
+## 6.1 Shared Loci in the Full GWAS Dataset
+
+Filtering the full GWAS associations catalog for T1D-related and allergy-related phenotype terms and identifying SNPs appearing in both subsets revealed **30 shared SNPs** between T1D and allergic phenotypes.
+
+```{r shared-loci-search-code, echo=TRUE, eval=FALSE}
+t1d_snps_all <- gwas_accession %>%
+  filter(str_detect(`DISEASE/TRAIT`,
+         regex("type 1 diabetes|T1D", ignore_case = TRUE))) %>%
+  pull(SNPS)
+
+allergy_snps_all <- gwas_accession %>%
+  filter(str_detect(`DISEASE/TRAIT`,
+         regex("atopic dermatitis|asthma|anaphylactic|allergic march",
+               ignore_case = TRUE))) %>%
+  pull(SNPS)
+
+shared_snps_all <- intersect(t1d_snps_all, allergy_snps_all)
+```
+
+<div class="key-stat">
+🔬 **30 shared SNPs** were identified between T1D and allergic phenotypes in the full GWAS Catalog
+</div>
+
+## 6.2 The Representation Gap
+
+When the same search was repeated on the **Black-ancestry filtered dataset** (studies ≥ 70% African ancestry participants), the result were surprising:
+
+```{r representation-gap-visual, echo=FALSE, fig.cap="Figure 2. Shared T1D–Allergy SNPs by dataset. The representation gap is total — zero of the 30 shared loci have been studied in majority-Black cohorts."}
+gap_data <- tribble(
+  ~Dataset,                  ~Shared_SNPs,
+  "Full GWAS Catalog",       30,
+  "Black Ancestry (≥70%)",   0
+)
+
+ggplot(gap_data, aes(x = Dataset, y = Shared_SNPs, fill = Dataset)) +
+  geom_col(width = 0.45, show.legend = FALSE) +
+  geom_text(aes(label = Shared_SNPs), vjust = -0.5, size = 8, fontface = "bold") +
+  scale_fill_manual(values = c("Full GWAS Catalog" = "#2c5f8a", "Black Ancestry (≥70%)" = "#c0392b")) +
+  scale_y_continuous(limits = c(0, 35)) +
+  labs(
+    title    = "Shared T1D–Allergy SNPs: Full Catalog vs. Black-Ancestry Studies",
+    subtitle = "30 shared loci identified in European-dominated data; 0 studied in Black-majority cohorts",
+    x        = NULL,
+    y        = "Number of Shared SNPs",
+    caption  = "Ancestry filter: studies where ≥70% of participants have African ancestry"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title    = element_text(face = "bold", color = "#1a3a5c"),
+    plot.subtitle = element_text(color = "#555"),
+    panel.grid.major.x = element_blank()
+  )
+```
+
+<div class="gap-box">
+⚠️ **Zero** of the 30 shared T1D–allergy loci have been studied in cohorts where Black participants comprise a majority. This is not a small gap — it is a complete absence of representation in this specific intersection of research.
+</div>
+
+## 6.3 ClinVar Validation of the 30 Shared SNPs
+
+The 30 shared SNPs were cross-referenced against the ClinVar variant summary to determine how many have reached the threshold of clinical documentation.
+
+```{r clinvar-validation-table, echo=FALSE}
+validation_summary <- tribble(
+  ~Metric,                                    ~Value,
+  "Total shared T1D–Allergy SNPs",            "30",
+  "SNPs with ClinVar entries",                "2 (6.7%)",
+  "SNPs absent from ClinVar",                 "28 (93.3%)",
+  "Clinically validated shared gene symbols", "IL7R, RPS26"
+)
+
+validation_summary %>%
+  kable(
+    caption = "Table 3. ClinVar Coverage of the 30 Shared T1D–Allergy SNPs",
+    col.names = c("Metric", "Value")
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = FALSE) %>%
+  column_spec(2, bold = TRUE, color = c("#1a3a5c", "#1a7a3a", "#c0392b", "#1a7a3a"))
+```
+
+## 6.4 The Two Clinically Validated Shared Loci
+
+The two SNPs confirmed in both the GWAS shared-loci analysis and ClinVar carry strong biological rationale for their dual role.
+
+```{r validated-snps-table, echo=FALSE}
+validated <- tribble(
+  ~SNP,         ~Gene,   ~T1D_Association,                          ~Allergy_Association,              ~Additional_Phenotypes,
+  "rs6897932",  "IL7R",  "Established T1D susceptibility gene; affects T cell development and survival",
+                          "Asthma; implicated in allergic inflammation and atopic conditions",
+                          "Multiple sclerosis, Systemic lupus erythematosus, Primary biliary cholangitis",
+  "rs705704",   "RPS26", "Located in chr12q13; affects INS (insulin gene) expression",
+                          "Asthma; implicated in immune cell function",
+                          "BMI, Metabolic syndrome, Forced expiratory volume, Thyroid medication use"
+)
+
+validated %>%
+  kable(
+    caption = "Table 4. The Two ClinVar-Confirmed Shared Loci Between T1D and Allergic Phenotypes",
+    col.names = c("SNP", "Gene", "T1D Mechanism", "Allergy Association", "Additional Phenotypes")
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = TRUE) %>%
+  row_spec(1, background = "#eaf4fb") %>%
+  row_spec(2, background = "#f0f8ee")
+```
+
+### IL7R (rs6897932)
+
+The interleukin-7 receptor gene (IL7R) is a well-established T1D risk locus [@santiago2008; @smyth2006]. IL-7 signaling helps T cells develop, survive, and maintain their normal numbers — processes that go wrong in T1D when the immune system mistakenly attacks the pancreas [@chen2021]. IL7R has also been linked to asthma [@pmc10119226; @pmc7176997], multiple sclerosis, and systemic lupus erythematosus [@zeng2025; @smyth2006], suggesting it plays a wider role in how the immune system can go wrong. Its involvement in keeping the immune system from overreacting or attacking the body [@zeng2025] offers a reasonable biological explanation for why IL7R appears as a shared locus across these conditions. 
+
+### RPS26 (rs705704)
+
+Ribosomal Protein S26 sits within the chromosome 12q13 region, a locus previously associated with T1D risk through effects on gene expression in the region [@pmc3285513]. More recently, RPS26 has been implicated in broad immune cell function. In particular, it plays a role in keeping T cell populations balanced and functional, and when this role is disrupted, T cells fail to develop and survive normally [@pmc8245578]. Since both T1D and asthma involve dysregulation of T cell activity, this is a viable biological reason for RPS26 appearing across both conditions. Its appearance as a shared locus between T1D and asthma remains a less-established finding [@commsbio2021] and represents a novel direction worthy of deeper biological investigation.
+
+<div class="finding-box">
+**Summary of Key Findings**
+
+- **30** shared SNPs between T1D and allergic phenotypes exist in the global GWAS literature
+- **0** of those 30 SNPs have been studied in GWAS cohorts where Black participants comprise ≥70% of the sample
+- **2** of the 30 SNPs are clinically documented in ClinVar: rs6897932 (*IL7R*) and rs705704 (*RPS26*)
+- **28** of the 30 SNPs are not yet clinically catalogued in ClinVar at all
+- Both validated genes are associated with both T1D and asthma, and both are implicated in immune regulation pathways relevant to autoimmunity and atopic disease
+</div>
+
+<hr class="section-divider"/>
+
+# 7. Discussion & Limitations
+
+## 7.1 What This Means
+
+The core finding of this project is not simply that there are 30 shared SNPs between T1D and allergic phenotypes. The more meaningful finding is the *structure* of that gap: these loci exist, they have been confirmed in populations that are overwhelmingly European in ancestry, and they have **never been investigated** in majority-Black cohorts. This is not a null result — it is documentation of a research vacuum.
+
+For Black individuals like my brother who present with both severe allergic phenotypes and T1D, the clinical guidance used in their care — diagnostic criteria, risk stratification, genetic screening thresholds — is built on genomic evidence that does not include them. This has downstream consequences at every level of care, from the family that doesn't know to advocate for a diabetes test, to the emergency physician who misattributes DKA to a different condition.
+
+The two validated shared loci (IL7R and RPS26) provide a concrete starting point for hypothesis-driven follow-up. Both genes operate in immune regulatory pathways that bridge autoimmunity and atopic disease, and neither has been studied at scale in African-ancestry cohorts.
+
+## 7.2 Methodological Contribution
+
+The LLM integration in this pipeline is not decorative — it solved two concrete problems that would have been significantly more time-intensive through manual approaches:
+
+1. **Feature Type Inference** across 40+ heterogeneous ClinVar columns, identifying which columns were analytically relevant and which were safe to drop before joining
+2. **Post-join column pruning** after a many-to-many GWAS join, reducing redundancy intelligently based on domain context rather than simple rule-based filtering
+
+This represents a replicable pattern: LLMs as an accelerant for the cognitive work of data wrangling in domain-rich datasets, rather than as a substitute for analytical reasoning.
+
+## 7.3 Limitations
+
+**Phenotype matching** The allergy phenotype filter in this project focused on asthma, atopic dermatitis, and anaphylaxis-adjacent terms. Severe early-onset *food-specific* anaphylaxis — which was the motivating clinical event in my brother's case — is not well-represented as a discrete phenotype in the GWAS Catalog at sufficient scale. The biological question most personal to this project remains partially unaddressed.
+
+**The 70% threshold is a methodological choice, not a biological fact.** Studies with 60% or 50% African ancestry could also be informative; the threshold was chosen to prioritize purity of representation over sample size. A sensitivity analysis across thresholds would strengthen this finding.
+
+**ClinVar coverage is not static.** The 28 SNPs absent from ClinVar may be documented in other clinical variant databases (e.g., OMIM, ClinGen) or may have been submitted to ClinVar after the data download date. The absence finding is accurate as of the download date (February 2026), not permanently.
+
+**LLM outputs require validation.** Column recommendations made by the Gemini LLM in the feature type inference and column pruning steps were reviewed manually before execution. The LLM is a reasoning assistant, not an authority — its suggestions could reflect training data biases or domain knowledge gaps.
+
+<hr class="section-divider"/>
+
+# 8. Conclusion
+
+This project set out to ask whether shared genetic loci exist between severe early-onset allergic phenotypes and Type 1 Diabetes, and whether those loci are underrepresented in Black populations in the clinical genomics literature. The answer to both questions is yes.
+
+Thirty shared SNPs were identified in the global GWAS literature. None of them have been studied in GWAS cohorts where Black participants make up the majority. Two have been clinically documented in ClinVar — both mapping to genes (IL7R, RPS26) with established roles in immune regulation relevant to both autoimmunity and atopic disease.
+
+The methodological pipeline developed here — combining ClinVar variant data, GWAS catalog associations, ancestry-stratified filtering, and LLM-assisted wrangling — provides a reusable framework for ancestry-stratified genomic gap analysis. The code is documented and the approach is extensible to other condition pairs and ancestry groups.
+
+Most importantly: the gap documented here is not an abstraction. It describes real families, families like mine,  who are navigating complex, comorbid autoimmune and allergic presentations without the benefit of genomic research that includes them. Closing that gap requires, at minimum, naming it clearly. This project is one attempt to do that. 
+
+Beyond this project, the next steps would unfold across three landscapes. In the near term, the most immediate improvements would be expanding phenotype matching using LLM-based semantic search to capture allergy-related traits missed by rigid string filters, integrating gnomAD African-ancestry allele frequency data for direct comparison against the shared loci, and narrowing the allergy phenotype focus to specific allergens such as tree nuts where the literature suggests stronger T1D correlation. In the medium term, the analysis could be extended with ML clustering to identify shared functional pathways across the 30 SNPs, a classifier to flag variants likely underclassified in Black populations due to representation gaps, and targeted validation of the IL7R and RPS26 findings against additional African-ancestry cohorts. The long-term vision is ultimately translational: advocating for mandatory ancestry diversity reporting in GWAS publications, building a public-facing clinical tool for ancestry-specific risk variant identification, and publishing these findings to contribute to more equitable genomic medicine for Black adolescents with T1D.
+
+---
+
+> *"The easy solution would be that there simply is not a correlation — but in the papers I have read, there most definitely is and I seek to find it."*  
+> — Project Research Notes
+
+---
+
+# 9. Appendix: Data Sources
+
+| Dataset | Source | Access Date |
+|---|---|---|
+| ClinVar Variant Summary | [NCBI ClinVar Downloads](https://www.ncbi.nlm.nih.gov/clinvar/docs/downloads/) | February 2026 |
+| GWAS Catalog Associations | [GWAS Catalog](https://www.ebi.ac.uk/gwas/docs/file-downloads) | February 2026 |
+| GWAS Catalog Ancestries | [GWAS Catalog v1.0.3.1](https://www.ebi.ac.uk/gwas/docs/file-downloads) | February 2026 |
+| Interactive Dashboard   | [Access Here](https://app.powerbi.com/links/v7DZIEP48A?ctid=8d84067d-9ad7-4572-9b10-133d36462aaa&pbi_source=linkShare)
+**R Packages Used:** `tidyverse`, `httr2`, `jsonlite`, `GenAI`, `stringr`, `knitr`, `kableExtra`
+
+**LLM Backend:** Google Gemini 2.5 Flash (via GenAI R package, Google AI API)
+
+<hr class="section-divider"/>
+
+# 10. References
